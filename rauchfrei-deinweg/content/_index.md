@@ -3,8 +3,7 @@ title: "Nichtraucherkurs: Dein Weg in ein rauchfreies Leben"
 date: 2023-10-27T10:00:00+01:00
 draft: false
 description: "Beginne dein rauchfreies Leben mit unserem unterstützenden Nichtraucherkurs. Jetzt anmelden und durchstarten!"
-images:
-  - "/images/nichtraucherkurs_hero.jpg"
+featured_image: "/images/nichraucher_hero.jpg"
 tags: ["Nichtraucher", "Gesundheit", "Kurs", "Aufhören"]
 featured: true
 ---

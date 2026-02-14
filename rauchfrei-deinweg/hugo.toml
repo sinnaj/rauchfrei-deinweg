@@ -6,3 +6,8 @@ theme = 'ananke'
 [params]
   description = "Dein Weg in ein rauchfreies Leben"
   featured_image = ""
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
