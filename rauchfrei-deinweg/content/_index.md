@@ -4,6 +4,8 @@ date: 2023-10-27T10:00:00+01:00
 draft: false
 description: "Beginne dein rauchfreies Leben mit unserem unterstützenden Nichtraucherkurs. Jetzt anmelden und durchstarten!"
 featured_image: "/images/nichraucher_hero.jpg"
+cta_text: "JETZT ANMELDEN!"
+cta_link: "/anmeldung"
 tags: ["Nichtraucher", "Gesundheit", "Kurs", "Aufhören"]
 featured: true
 ---
@@ -21,18 +23,6 @@ Die Vorteile eines rauchfreien Lebens sind immens: verbesserte Gesundheit, mehr 
 *   **Praktische Strategien:** Lerne bewährte Methoden, um mit Verlangen und Entzugserscheinungen umzugehen.
 *   **Motivierende Gemeinschaft:** Tausche dich mit Gleichgesinnten aus und finde gegenseitige Unterstützung.
 *   **Nachhaltige Veränderung:** Wir helfen dir, langfristig rauchfrei zu bleiben.
-
----
-
-## **Bereit für den ersten Schritt?**
-
-Melde dich jetzt für unseren nächsten Kurs an und beginne dein neues, rauchfreies Leben!
-
-<div style="text-align: center; margin-top: 30px; margin-bottom: 50px;">
-    <a href="/anmeldung" class="btn btn-primary btn-lg" style="background-color: #28a745; border-color: #28a745; color: white; padding: 15px 30px; font-size: 1.2em; text-decoration: none; border-radius: 5px;">
-        JETZT ANMELDEN!
-    </a>
-</div>
 
 ---
 
