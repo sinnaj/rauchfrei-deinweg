@@ -1,0 +1,26 @@
+[build]
+  base = "rauchfrei-deinweg"
+  publish = "rauchfrei-deinweg/public"
+  command = "hugo --gc --minify -b $URL"
+
+[build.environment]
+  HUGO_VERSION = "0.155.3"
+  HUGO_ENVIRONMENT = "production"
+  HUGO_ENV = "production"
+
+[context.production.environment]
+  HUGO_VERSION = "0.155.3"
+  HUGO_ENV = "production"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
