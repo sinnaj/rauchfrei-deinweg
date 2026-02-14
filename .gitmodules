@@ -1,0 +1,3 @@
+[submodule "rauchfrei-deinweg/themes/paige"]
+	path = rauchfrei-deinweg/themes/paige
+	url = https://github.com/willfaught/paige.git
