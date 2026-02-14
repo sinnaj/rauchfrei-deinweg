@@ -3,10 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-27T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2023-10-27T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/aufh%C3%B6ren/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>//localhost:1313/tags/gesundheit/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/kurs/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/nichtraucher/</loc>
   </url>
 </urlset>
