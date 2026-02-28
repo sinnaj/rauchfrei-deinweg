@@ -1,8 +1,8 @@
 ---
-title: "Das Rauchfrei-Programm: Dein Weg in ein rauchfreies Leben"
+title: "Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier"
 date: 2023-10-27T10:00:00+01:00
 draft: false
-description: "Beginne dein rauchfreies Leben mit unserem unterstützenden Nichtraucherkurs. Jetzt anmelden und durchstarten!"
+description: "Professionelle Unterstützung zur Rauchentwöhnung mit Dipl.-Päd. Christiane Meik. Starten Sie noch heute Ihren Weg in ein rauchfreies Leben!"
 featured_image: "/images/fruehling_breath2.jpeg"
 cta_text: "JETZT ANMELDEN!"
 cta_link: "/anmeldung"
@@ -12,21 +12,22 @@ tags: ["Nichtraucher", "Gesundheit", "Kurs", "Aufhören"]
 featured: true
 ---
 
-# Dein Weg in ein rauchfreies Leben
+# Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier
 
-Herzlich willkommen auf der Seite unseres Nichtraucherkurses! Wir wissen, wie schwer es sein kann, mit dem Rauchen aufzuhören. Aber du bist nicht allein auf diesem Weg. Unser Kurs bietet dir die Unterstützung, die Werkzeuge und das Wissen, das du brauchst, um endlich frei zu sein.
+Sind Sie bereit, sich von der Zigarette zu verabschieden und ein gesünderes, energiegeladeneres Leben zu führen? Das Rauchfrei-Programm bietet Ihnen die Unterstützung und die Werkzeuge, die Sie brauchen, um dieses Ziel zu erreichen.
 
-**Warum jetzt aufhören?**
-Die Vorteile eines rauchfreien Lebens sind immens: verbesserte Gesundheit, mehr Energie, ein besseres Hautbild, ein schärferer Geruchs- und Geschmackssinn und nicht zuletzt eine erhebliche finanzielle Ersparnis. Es ist nie zu spät, die Kontrolle über deine Gesundheit zurückzugewinnen.
+**Investieren Sie in Ihre Gesundheit – es lohnt sich!**
+Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krankheiten sind nur einige der Vorteile, die auf Sie warten. Es ist die beste Zeit, die Kontrolle über Ihre Gesundheit zurückzugewinnen.
 
-{{< highlight-box title="Was dich in unserem Kurs erwartet" >}}
-* **Professionelle Begleitung:** Unsere erfahrenen Kursleiter unterstützen dich individuell auf deinem Weg.
-* **Praktische Strategien:** Lerne bewährte Methoden, um mit Verlangen und Entzugserscheinungen umzugehen.
-* **Motivierende Gemeinschaft:** Tausche dich mit Gleichgesinnten aus und finde gegenseitige Unterstützung.
-* **Nachhaltige Veränderung:** Wir helfen dir, langfristig rauchfrei zu bleiben.
+{{< highlight-box title="Was erwartet Sie in unserem Programm?" >}}
+* **Professionelle Begleitung:** Dipl.-Päd. Christiane Meik – erfahrene Expertin und Ex-Raucherin unterstützt Sie mit bewährten Strategien und individueller Beratung.
+* **Stärkung Ihrer Motivation:** Entdecken Sie Ihre persönlichen Gründe für ein rauchfreies Leben und lernen Sie, wie Sie dieses aufrechterhalten.
+* **Umgang mit Entzugserscheinungen:** Frau Meik zeigt Ihnen effektive Wege, mit Verlangen und Stress umzugehen.
+* **Langfristiger Erfolg:** Lernen Sie Strategien, um auch nach dem Rauchstopp dauerhaft rauchfrei zu bleiben.
 {{< /highlight-box >}}
 
 <div class="tc mt4 mb5">
+  <p class="f5 f4-l lh-copy mb4">Melden Sie sich noch heute an und machen Sie den ersten Schritt in Ihr rauchfreies Leben!</p>
   <a href="/anmeldung" class="f5 f4-l no-underline grow dib v-mid bg-green white ba b--green ph4 ph5-l pv3 hover-bg-dark-green fw6 br2">
     JETZT ANMELDEN!
   </a>
