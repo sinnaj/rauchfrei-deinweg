@@ -3,7 +3,7 @@ title: "Das Rauchfrei-Programm: Dein Weg in ein rauchfreies Leben"
 date: 2023-10-27T10:00:00+01:00
 draft: false
 description: "Beginne dein rauchfreies Leben mit unserem unterstützenden Nichtraucherkurs. Jetzt anmelden und durchstarten!"
-featured_image: "/images/hero_banner_breathing_in_nature_v2.png"
+featured_image: "/images/mountain_breath.jpeg"
 cta_text: "JETZT ANMELDEN!"
 cta_link: "/anmeldung"
 cta_text_secondary: "Für Unternehmen"
