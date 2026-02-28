@@ -7,77 +7,70 @@ featured_image: ""
 tags: ["Unternehmen", "Wellness", "Gesundheitsförderung"]
 ---
 
-# Gesundheit ist Unternehmenskapital
+# Firmenseminare zur Rauchentwöhnung
 
-Rauchen kostet Unternehmen Milliarden Euro pro Jahr durch Produktivitätsverluste, Krankenstand und erhöhte Krankenversicherungsbeiträge. Unser Nichtraucherprogramm hilft deinen Mitarbeitern, gesünder zu leben – und deinem Unternehmen, profitabler zu werden.
+Als Ex-Raucherin biete ich Firmenseminare nach dem Rauchfrei-Programm in verschiedenen Formaten an. Meine langjährige persönliche Erfahrung und professionelle Expertise helfen Ihren Mitarbeitern, erfolgreich rauchfrei zu werden.
 
-## Warum ein Unternehmens-Nichtraucherprogramm?
-
-Mitarbeiter, die mit dem Rauchen aufhören, zeigen:
-- **↑ 30% höhere Produktivität** durch weniger Kurzpausen und bessere Konzentration
-- **↓ 40% weniger Krankenstand** pro Jahr
-- **✓ Verbesserte Mitarbeiterzufriedenheit** und Bindung
-- **✓ Positive Unternehmenskultur** rund um Gesundheit und Wohlbefinden
-
-{{< highlight-box title="Unser Unternehmens-Angebot" >}}
-* **Maßgeschideerte Seminare:** Speziell für dein Team konzipiert (Halbtag oder Ganztag)
-* **Individuelle Begleitung:** Unterstützung während und nach dem Programm
-* **Flexible Gestaltung:** Online, vor Ort oder Hybrid nach deinen Bedürfnissen
-* **Messbare Ergebnisse:** Nachverfolgung der Erfolgsquoten und ROI
-* **Kostenoptimierung:** Reduzierung von Krankenstand und Präventionskosten
+{{< highlight-box title="Seminarformate" >}}
+* **Tagesseminar:** 8 Unterrichtsstunden an einem Tag – intensiv und effektiv
+* **Vierwochenprogramm:** 1 Termin pro Woche über 4 Wochen mit insgesamt 14 Unterrichtsstunden – nachhaltig und unterstützend
+* **Teilnehmerzahl:** 8 – 15 Personen pro Seminar (optimal für Gruppendynamik und individuelle Betreuung)
+* **Kontaktaufnahme:** Nehmen Sie gerne Kontakt auf für ein maßgeschneidertes Angebot
 {{< /highlight-box >}}
 
-## Programmübersicht
+## Mein Angebot
 
-**Grundmodul (4 Stunden)**
-Intensive Einführung in bewährte Techniken zur Rauchentwöhnung. Ideal für erste Schritte und Motivationssteigerung.
+Ein Nichtraucherkurs nach dem **Rauchfrei-Programm vom IFT** – eine Raucherentwöhnung für Gruppen auf Basis von gegenseitiger und professioneller Unterstützung.
 
-**Intensivprogramm (2 Tage)**
-Umfassendes Training mit Einzelcoaching, Stressabbautechniken und Langzeitmotivation. Höchste Erfolgschancen.
+### Besondere Merkmale dieser Nichtraucherkurse:
 
-**Nachbetreuung & Follow-up (Optional)**
-Regelmäßige Treffen über 3-6 Monate hinweg untuk Unterstützung und Rückfallprävention.
+- **Hohe und seriös nachgewiesene Erfolgsquote** (www.rauchfrei-programm.de)
+- **Ein gemeinsamer Rauchstopp** nach der bewährten Punkt-Schluss-Methode
+- **Individuelle telefonische Unterstützung** am 3. Tag des Rauchstopps
+- **Individuelle Vorbereitung** auf den Rauchstopp und professionelle Begleitung durch eine erfahrene Ex-Raucherin und Suchtexpertin
+- **Besondere Rückfallprophylaxe** für einen nachhaltigen Rauchstopp
+- **Wertvolles Kurshandbuch** zum Nachschlagen und zur Inspiration – für dauerhafte Nachhaltigkeit
+- **Wissenschaftlich bewährte Methoden** zur Raucherentwöhnung nach aktuellen Erkenntnissen
+
+### Ergänzung: Hypnose zur Raucherentwöhnung (optional)
+
+Ergänzend biete ich den Teilnehmenden nach Wunsch und ohne Kontraindikationen zusätzlich Hypnose zur Raucherentwöhnung an. Das Unterbewusstsein als Bündnispartner kann helfen, alle Blockaden zu lösen, die der Rauchfreiheit entgegenstehen könnten.
 
 ## Über die Trainerin
 
-**Dipl.-Päd. Christiane Meik** bringt mehr als 20 Jahre Erfahrung in Coaching und Gesundheitsförderung mit. Sie ist zertifizierte Trainerin und Mental-Coach mit fundiertem psychologischem Hintergrund.
+**Dipl.-Päd. Christiane Meik** – Heilpraktikerin für Psychotherapie, Mental-Coach, zertifizierte Trainerin und **Ex-Raucherin**
 
-Von 2003 bis 2025 hat sie in eigener Privatpraxis als Heilpraktikerin für Psychotherapie tätig war. **Ab 2026** spezialisiert sie sich auf:
+Von 2003 bis 2025 war sie in eigener Privatpraxis als Heilpraktikerin für Psychotherapie tätig. **Ab 2026** spezialisiert sie sich auf:
 - Psychologisch fundiertes Mental-Coaching
-- Online und In-Person Trainings
-- Corporate Wellness und Präventionsseminare
-
-**Ihre Expertise:**
-- Rauchentwöhnung und Verhaltensänderung
+- Nichtraucherprogramme für Gruppen und Unternehmen
 - Stressmanagement und Burnout-Prävention
-- Individuelle und Gruppen-Coachings
-- Langfristige Erfolgsquoten von über 70%
+- Online und In-Person Trainings
+
+Ihre persönliche Erfahrung als Ex-Raucherin kombiniert mit langjähriger therapeutischer Expertise macht sie zum idealen Coach für Ihre Mitarbeiter.
 
 ---
 
 ## Häufig gestellte Fragen
 
-**Wie viele Mitarbeiter können teilnehmen?**
-Unsere Programme sind flexibel skalierbar. Kleine Teams (5-10 Personen) bis hin zu größeren Gruppen (20+ Personen) sind möglich. Wir empfehlen Gruppen bis zu 15 Personen für optimale Effektivität.
+**Wie viele Mitarbeiter sollten teilnehmen?**
+Die optimale Gruppengröße liegt zwischen 8 und 15 Personen. Dies ermöglicht sowohl eine unterstützende Gruppendynamik als auch individuelle Betreuung.
 
-**Kann das Programm vollständig online durchgeführt werden?**
-Ja, vollständig online, vor Ort in deinem Unternehmen oder im hybriden Format – ganz nach deinen Anforderungen.
+**Welches Format ist das richtige für unser Unternehmen?**
+Das hängt von Ihren Bedürfnissen ab: Das Tagesseminar ist intensiv und zeitlich kompakt, das Vierwochenprogramm bietet mehr Zeit für Unterstützung und Integration in den Arbeitsalltag.
 
-**Wie lange dauert es, bis Mitarbeiter erfolgreich mit dem Rauchen aufhören?**
-Viele erleben erste Erfolge bereits nach 2-4 Wochen. Die vollständige Umgewöhnung mit stabilen Ergebnissen dauert meist 2-3 Monate, mit kontinuierlicher Unterstützung.
+**Wie erfolgsreich ist das Rauchfrei-Programm?**
+Das Rauchfrei-Programm vom IFT hat eine hohe und seriös nachgewiesene Erfolgsquote. Weitere Informationen finden Sie auf www.rauchfrei-programm.de.
 
-**Kann das Programm von der Krankenkasse bezuschusst werden?**
-Ja, viele Krankenkassen bieten Zuschüsse für Präventionsprogramme an. Gerne helfen wir dir bei der Antragsstellung.
-
-**Was kostet das Programm?**
-Die Kosten hängen ab von der Programmvariante, der Teilnehmerzahl und der Dauer. Wir erstellen gerne ein maßgeschneidertes Angebot für dein Unternehmen. 
+**Was kostet das Seminar?**
+Die Kosten hängen vom gewählten Format (Tagesseminar oder Vierwochenprogramm) und der Teilnehmerzahl ab. Ich stelle gerne ein maßgeschneidertes Angebot für Ihr Unternehmen zusammen. 
 
 ---
 
 <div class="tc mt5 mb5">
-  <a href="mailto:info@meik-gesundheit.de?subject=Unternehmens-Nichtraucherprogramm%20Anfrage" class="f5 f4-l no-underline grow dib v-mid bg-green white ba b--green ph4 ph5-l pv3 hover-bg-dark-green fw6 br2">
+  <p class="f5 f4-l lh-copy mb4">Nehmen Sie Kontakt auf und lassen Sie sich ein individuelles Angebot erstellen.</p>
+  <a href="mailto:info@meik-gesundheit.de?subject=Firmenseminar%20Nichtraucherprogramm%20Anfrage" class="f5 f4-l no-underline grow dib v-mid bg-green white ba b--green ph4 ph5-l pv3 hover-bg-dark-green fw6 br2">
     JETZT ANFRAGEN
   </a>
 </div>
 
-Wir freuen uns darauf, mit dir und deinem Team einen Unterschied zu machen!
+Ich freue mich auf die Zusammenarbeit mit Ihnen und Ihrem Unternehmen!
