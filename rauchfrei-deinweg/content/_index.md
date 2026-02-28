@@ -37,7 +37,7 @@ Die Vorteile eines rauchfreien Lebens sind immens: verbesserte Gesundheit, mehr 
 ### Die Kursleiterin
 
 <div class="flex flex-column mb5">
-  <div class="w-100 mb2 tc">
+  <div class="w-100 tc" style="margin-bottom: 20px;">
     <img src="/rauchfrei-deinweg/images/meik_instructor_circled_nobg-removebg-preview.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto;">
   </div>
   <div class="w-100">
