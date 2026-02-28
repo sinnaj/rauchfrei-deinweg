@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.2.33:1313/</loc>
+    <loc>/</loc>
     <lastmod>2023-10-27T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://192.168.2.33:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-10-27T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://192.168.2.33:1313/tags/aufh%C3%B6ren/</loc>
+    <loc>/tags/aufh%C3%B6ren/</loc>
   </url><url>
-    <loc>http://192.168.2.33:1313/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>http://192.168.2.33:1313/tags/gesundheit/</loc>
+    <loc>/tags/gesundheit/</loc>
   </url><url>
-    <loc>http://192.168.2.33:1313/tags/kurs/</loc>
+    <loc>/tags/kurs/</loc>
   </url><url>
-    <loc>http://192.168.2.33:1313/tags/nichtraucher/</loc>
+    <loc>/tags/nichtraucher/</loc>
   </url>
 </urlset>

@@ -6,18 +6,18 @@
     {{ $cover_dimming_class := site.Params.cover_dimming_class | compare.Default "bg-black-60" }}
     <div class="{{ $cover_dimming_class }}" style="min-height: 70vh; display: flex; flex-direction: column;">
       {{ partials.Include "site-navigation.html" .}}
-      <div class="tl-l tc pv4 pv5-m pv6-l ph3 ph4-m ph5-l flex-auto flex items-center">
+      <div class="tc pv4 pv5-m pv6-l ph3 ph4-m ph5-l flex-auto flex items-center">
         <div class="w-100">
           <h1 class="f3 f2-m f1-l fw2 white-90 mb0 lh-title mv0">
             {{ .Title | compare.Default .Site.Title }}
           </h1>
           {{ with .Params.description }}
-            <h2 class="fw1 f5 f4-m f3-l white-80 measure-wide-l mt3 mb4 lh-copy">
+            <h2 class="fw1 f5 f4-m f3-l white-80 measure-wide-l center mt3 mb4 lh-copy">
               {{ . }}
             </h2>
           {{ end }}
           {{ if or .Params.cta_text .Params.cta_text_secondary }}
-            <div class="mt4 flex flex-column flex-row-ns flex-wrap items-center-ns">
+            <div class="mt4 flex flex-column flex-row-ns flex-wrap justify-center">
               {{ with .Params.cta_text }}
                 <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
                   {{ . }}
