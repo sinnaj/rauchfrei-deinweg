@@ -57,6 +57,15 @@
   color: #137752;
 }
 
+/* CTA Button Overrides - ensure white text */
+a.bg-green,
+a.bg-green:link,
+a.bg-green:visited,
+a.bg-green:hover,
+a.bg-green:active {
+  color: #fff !important;
+}
+
 /* Responsive */
 @media screen and (max-width: 30em) {
   .highlight-box-title {
