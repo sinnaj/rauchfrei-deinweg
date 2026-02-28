@@ -38,7 +38,7 @@ Die Vorteile eines rauchfreien Lebens sind immens: verbesserte Gesundheit, mehr 
 
 <div class="flex flex-column flex-row-ns items-center-ns mb5">
   <div class="w-100 w-40-ns mb4 mb0-ns mr0 mr4-ns tc">
-    <img src="/images/Meik_Instructor_Circled.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto;">
+    <img src="/rauchfrei-deinweg/images/Meik_Instructor_Circled.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto;">
   </div>
   <div class="w-100 w-60-ns">
     <h4 class="f4 fw6 dark-green mb3">Dipl.-Päd. Christiane Meik</h4>
