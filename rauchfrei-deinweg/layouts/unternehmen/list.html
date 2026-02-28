@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+  <style>
+    article h1, article h2, article h3, article h4, article h5, article h6 {
+      text-align: center;
+    }
+    .highlight-box-title {
+      text-align: center;
+    }
+  </style>
+
+  <article class="cf ph3 ph4-m ph5-l pv3 pv4-m pv5-l f5 f4-l tl center measure-wide-l lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+    {{ .Content }}
+  </article>
+
+{{ end }}
