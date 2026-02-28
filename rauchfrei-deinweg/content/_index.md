@@ -19,12 +19,12 @@ Herzlich willkommen auf der Seite unseres Nichtraucherkurses! Wir wissen, wie sc
 **Warum jetzt aufhören?**
 Die Vorteile eines rauchfreien Lebens sind immens: verbesserte Gesundheit, mehr Energie, ein besseres Hautbild, ein schärferer Geruchs- und Geschmackssinn und nicht zuletzt eine erhebliche finanzielle Ersparnis. Es ist nie zu spät, die Kontrolle über deine Gesundheit zurückzugewinnen.
 
-### Was dich in unserem Kurs erwartet:
-
-*   **Professionelle Begleitung:** Unsere erfahrenen Kursleiter unterstützen dich individuell auf deinem Weg.
-*   **Praktische Strategien:** Lerne bewährte Methoden, um mit Verlangen und Entzugserscheinungen umzugehen.
-*   **Motivierende Gemeinschaft:** Tausche dich mit Gleichgesinnten aus und finde gegenseitige Unterstützung.
-*   **Nachhaltige Veränderung:** Wir helfen dir, langfristig rauchfrei zu bleiben.
+{{< highlight-box title="Was dich in unserem Kurs erwartet" >}}
+* **Professionelle Begleitung:** Unsere erfahrenen Kursleiter unterstützen dich individuell auf deinem Weg.
+* **Praktische Strategien:** Lerne bewährte Methoden, um mit Verlangen und Entzugserscheinungen umzugehen.
+* **Motivierende Gemeinschaft:** Tausche dich mit Gleichgesinnten aus und finde gegenseitige Unterstützung.
+* **Nachhaltige Veränderung:** Wir helfen dir, langfristig rauchfrei zu bleiben.
+{{< /highlight-box >}}
 
 ---
 

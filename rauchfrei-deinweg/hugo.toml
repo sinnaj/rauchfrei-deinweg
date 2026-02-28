@@ -6,6 +6,7 @@ theme = 'ananke'
 [params]
   description = "Dein Weg in ein rauchfreies Leben"
   featured_image = ""
+  custom_css = ["custom.css"]
 
 [markup]
   [markup.goldmark]
