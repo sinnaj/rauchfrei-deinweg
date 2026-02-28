@@ -1,16 +1,16 @@
 /* Highlight Box */
 .highlight-box {
-  background: linear-gradient(135deg, #f0faf0 0%, #e8f5e9 100%);
-  border-left: 5px solid #2e7d32;
+  background: linear-gradient(135deg, #e8fdf5 0%, #9eebcf 100%);
+  border-left: 5px solid #19a974;
   border-radius: 0 12px 12px 0;
   padding: 0;
   margin: 2rem 0;
-  box-shadow: 0 4px 15px rgba(46, 125, 50, 0.12);
+  box-shadow: 0 4px 15px rgba(25, 169, 116, 0.15);
   overflow: hidden;
 }
 
 .highlight-box-title {
-  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+  background: linear-gradient(135deg, #19a974 0%, #137752 100%);
   color: #fff;
   font-size: 1.25rem;
   font-weight: 700;
@@ -36,7 +36,7 @@
 .highlight-box-content ul li {
   position: relative;
   padding: 0.75rem 0 0.75rem 2rem;
-  border-bottom: 1px solid rgba(46, 125, 50, 0.12);
+  border-bottom: 1px solid rgba(25, 169, 116, 0.12);
   line-height: 1.6;
 }
 
@@ -48,13 +48,13 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #2e7d32;
+  color: #19a974;
   font-weight: 700;
   font-size: 1.1rem;
 }
 
 .highlight-box-content strong {
-  color: #1b5e20;
+  color: #137752;
 }
 
 /* Responsive */
