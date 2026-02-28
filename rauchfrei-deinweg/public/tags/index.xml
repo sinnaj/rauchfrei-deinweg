@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rauchfrei - Dein Weg</title>
-    <link>/tags/</link>
+    <link>/rauchfrei-deinweg/tags/</link>
     <description>Recent content in Tags on Rauchfrei - Dein Weg</description>
     <generator>Hugo</generator>
     <language>de-de</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/rauchfrei-deinweg/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aufhören</title>
-      <link>/tags/aufh%C3%B6ren/</link>
+      <link>/rauchfrei-deinweg/tags/aufh%C3%B6ren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/aufh%C3%B6ren/</guid>
+      <guid>/rauchfrei-deinweg/tags/aufh%C3%B6ren/</guid>
       <description></description>
     </item>
     <item>
       <title>Gesundheit</title>
-      <link>/tags/gesundheit/</link>
+      <link>/rauchfrei-deinweg/tags/gesundheit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/gesundheit/</guid>
+      <guid>/rauchfrei-deinweg/tags/gesundheit/</guid>
       <description></description>
     </item>
     <item>
       <title>Kurs</title>
-      <link>/tags/kurs/</link>
+      <link>/rauchfrei-deinweg/tags/kurs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/kurs/</guid>
+      <guid>/rauchfrei-deinweg/tags/kurs/</guid>
       <description></description>
     </item>
     <item>
       <title>Nichtraucher</title>
-      <link>/tags/nichtraucher/</link>
+      <link>/rauchfrei-deinweg/tags/nichtraucher/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/nichtraucher/</guid>
+      <guid>/rauchfrei-deinweg/tags/nichtraucher/</guid>
       <description></description>
     </item>
   </channel>
