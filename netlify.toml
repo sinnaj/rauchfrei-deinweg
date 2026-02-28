@@ -1,6 +1,6 @@
 [build]
   base = "rauchfrei-deinweg"
-  publish = "rauchfrei-deinweg/public"
+  publish = "public"
   command = "hugo --gc --minify -b $URL"
 
 [build.environment]
