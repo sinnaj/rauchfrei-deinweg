@@ -26,6 +26,12 @@ Die Vorteile eines rauchfreien Lebens sind immens: verbesserte Gesundheit, mehr 
 * **Nachhaltige Veränderung:** Wir helfen dir, langfristig rauchfrei zu bleiben.
 {{< /highlight-box >}}
 
+<div class="tc mt4 mb5">
+  <a href="/anmeldung" class="f5 f4-l no-underline grow dib v-mid bg-green white ba b--green ph4 ph5-l pv3 hover-bg-dark-green fw6 br2">
+    JETZT ANMELDEN!
+  </a>
+</div>
+
 ---
 
 ### Häufig gestellte Fragen
