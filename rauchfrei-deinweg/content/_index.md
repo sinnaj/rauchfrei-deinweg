@@ -7,7 +7,7 @@ featured_image: "/images/fruehling_breath2.jpeg"
 cta_text: "JETZT ANMELDEN!"
 cta_link: "/anmeldung"
 cta_text_secondary: "Für Unternehmen"
-cta_link_secondary: "/unternehmen"
+cta_link_secondary: "/unternehmen/"
 tags: ["Nichtraucher", "Gesundheit", "Kurs", "Aufhören"]
 featured: true
 ---
