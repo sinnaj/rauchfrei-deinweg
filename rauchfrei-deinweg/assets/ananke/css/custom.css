@@ -66,6 +66,32 @@ a.bg-green:active {
   color: #fff !important;
 }
 
+/* Hero Urgency Banner */
+.hero-urgency-banner {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffb700;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  backdrop-filter: blur(4px);
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+.urgency-icon {
+  font-size: 1.75rem;
+  margin-right: 0.75rem;
+  animation: pulse-icon 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% { border-color: #ffb700; box-shadow: 0 0 8px rgba(255, 183, 0, 0.3); }
+  50% { border-color: #ff6300; box-shadow: 0 0 16px rgba(255, 99, 0, 0.4); }
+}
+
+@keyframes pulse-icon {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
 /* Responsive */
 @media screen and (max-width: 30em) {
   .highlight-box-title {
