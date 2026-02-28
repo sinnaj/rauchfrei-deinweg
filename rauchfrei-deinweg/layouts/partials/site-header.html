@@ -27,12 +27,12 @@
           {{ if or .Params.cta_text .Params.cta_text_secondary }}
             <div class="flex flex-column flex-row-ns flex-wrap justify-center">
               {{ with .Params.cta_text }}
-                <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
+                <a href="{{ if $.Params.cta_link }}{{ $.Site.BaseURL }}{{ $.Params.cta_link | strings.TrimPrefix "/" }}{{ else }}#{{ end }}" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
                   {{ . }}
                 </a>
               {{ end }}
               {{ with .Params.cta_text_secondary }}
-                <a href="{{ $.Params.cta_link_secondary | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid white ba b--white ph3 ph4-l pv2 pv3-l mb3 mb0-ns hover-bg-white hover-dark-gray fw6 br2">
+                <a href="{{ if $.Params.cta_link_secondary }}{{ $.Site.BaseURL }}{{ $.Params.cta_link_secondary | strings.TrimPrefix "/" }}{{ else }}#{{ end }}" class="f6 f5-l no-underline grow dib v-mid white ba b--white ph3 ph4-l pv2 pv3-l mb3 mb0-ns hover-bg-white hover-dark-gray fw6 br2">
                   {{ . }}
                 </a>
               {{ end }}
@@ -58,12 +58,12 @@
         {{ if or .Params.cta_text .Params.cta_text_secondary }}
           <div class="mt4 flex flex-column flex-row-ns flex-wrap items-center-ns">
             {{ with .Params.cta_text }}
-              <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
+              <a href="{{ if $.Params.cta_link }}{{ $.Site.BaseURL }}{{ $.Params.cta_link | strings.TrimPrefix "/" }}{{ else }}#{{ end }}" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
                 {{ . }}
               </a>
             {{ end }}
             {{ with .Params.cta_text_secondary }}
-              <a href="{{ $.Params.cta_link_secondary | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid white ba b--white ph3 ph4-l pv2 pv3-l mb3 mb0-ns hover-bg-white hover-dark-gray fw6 br2">
+              <a href="{{ if $.Params.cta_link_secondary }}{{ $.Site.BaseURL }}{{ $.Params.cta_link_secondary | strings.TrimPrefix "/" }}{{ else }}#{{ end }}" class="f6 f5-l no-underline grow dib v-mid white ba b--white ph3 ph4-l pv2 pv3-l mb3 mb0-ns hover-bg-white hover-dark-gray fw6 br2">
                 {{ . }}
               </a>
             {{ end }}
