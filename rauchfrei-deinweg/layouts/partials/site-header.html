@@ -16,8 +16,14 @@
               {{ . }}
             </h2>
           {{ end }}
+          <!-- Urgency Banner -->
+          <div class="hero-urgency-banner dib mt3 mb4">
+            <span class="db f5 f4-l fw7 white">Nächster Kurs 26.03.26</span>
+            <span class="db f6 f5-l fw5 gold mt1">Nur noch begrenzt Plätze!</span>
+          </div>
+
           {{ if or .Params.cta_text .Params.cta_text_secondary }}
-            <div class="mt4 flex flex-column flex-row-ns flex-wrap justify-center">
+            <div class="flex flex-column flex-row-ns flex-wrap justify-center">
               {{ with .Params.cta_text }}
                 <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
                   {{ . }}
@@ -30,12 +36,6 @@
               {{ end }}
             </div>
           {{ end }}
-
-          <!-- Urgency Banner -->
-          <div class="hero-urgency-banner dib mt4">
-            <span class="db f5 f4-l fw7 white">Nächster Kurs 26.03.26</span>
-            <span class="db f6 f5-l fw5 gold mt1">Nur noch begrenzt Plätze!</span>
-          </div>
         </div>
       </div>
     </div>
