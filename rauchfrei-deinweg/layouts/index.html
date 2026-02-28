@@ -8,7 +8,7 @@
     {{- $text_alignment = "tr" -}}
   {{- end -}}
 
-  <article class="cf ph3 ph4-m ph5-l pv3 pv4-m pv5-l f5 f4-l {{ $text_alignment }} center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+  <article class="cf ph3 ph4-m ph5-l pv3 pv4-m pv5-l f5 f4-l tc tl-l center measure-wide-l lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
     {{ .Content }}
   </article>
 
