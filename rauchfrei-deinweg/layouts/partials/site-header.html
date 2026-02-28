@@ -1,29 +1,29 @@
 {{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
-  {{ $featured_image_class := site.Params.featured_image_class | compare.Default "cover bg-top" }}
-  <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}');">
+  {{ $featured_image_class := site.Params.featured_image_class | compare.Default "cover bg-center" }}
+  <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}'); min-height: 70vh;">
     {{ $cover_dimming_class := site.Params.cover_dimming_class | compare.Default "bg-black-60" }}
     <div class="{{ $cover_dimming_class }}">
       {{ partials.Include "site-navigation.html" .}}
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+      <div class="tc pv4 pv5-m pv6-l ph3 ph4-m ph5-l">
+        <h1 class="f3 f2-m f1-l fw2 white-90 mb0 lh-title mv0">
           {{ .Title | compare.Default .Site.Title }}
         </h1>
         {{ with .Params.description }}
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
+          <h2 class="fw1 f5 f4-m f3-l white-80 measure-wide center mt3 mb4 lh-copy">
             {{ . }}
           </h2>
         {{ end }}
         {{ if or .Params.cta_text .Params.cta_text_secondary }}
-          <div class="mt4 flex flex-wrap justify-center items-center">
+          <div class="mt4 flex flex-column flex-row-ns flex-wrap justify-center items-center">
             {{ with .Params.cta_text }}
-              <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f5 no-underline grow dib v-mid bg-green white ba b--green ph3 pv2 mb3 mr2 hover-bg-dark-green" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
+              <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
                 {{ . }}
               </a>
             {{ end }}
             {{ with .Params.cta_text_secondary }}
-              <a href="{{ $.Params.cta_link_secondary | compare.Default "#" }}" class="f5 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3 hover-bg-white hover-dark-gray" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
+              <a href="{{ $.Params.cta_link_secondary | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid white ba b--white ph3 ph4-l pv2 pv3-l mb3 mb0-ns hover-bg-white hover-dark-gray fw6 br2">
                 {{ . }}
               </a>
             {{ end }}
@@ -36,24 +36,24 @@
   <header>
     <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | compare.Default "bg-black" }}">
       {{ partials.Include "site-navigation.html" . }}
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+      <div class="tc pv3 pv4-m pv5-l ph3 ph4-m ph5-l">
+        <h1 class="f3 f2-m f1-l fw2 light-silver mb0 lh-title">
           {{ .Title | compare.Default .Site.Title }}
         </h1>
         {{ with .Params.description }}
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+          <h2 class="fw1 f5 f4-m f3-l white-80 measure-wide center lh-copy mt3 mb4">
             {{ . }}
           </h2>
         {{ end }}
         {{ if or .Params.cta_text .Params.cta_text_secondary }}
-          <div class="mt4 flex flex-wrap justify-center items-center">
+          <div class="mt4 flex flex-column flex-row-ns flex-wrap justify-center items-center">
             {{ with .Params.cta_text }}
-              <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f5 no-underline grow dib v-mid bg-green white ba b--green ph3 pv2 mb3 mr2 hover-bg-dark-green" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
+              <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
                 {{ . }}
               </a>
             {{ end }}
             {{ with .Params.cta_text_secondary }}
-              <a href="{{ $.Params.cta_link_secondary | compare.Default "#" }}" class="f5 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3 hover-bg-white hover-dark-gray" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
+              <a href="{{ $.Params.cta_link_secondary | compare.Default "#" }}" class="f6 f5-l no-underline grow dib v-mid white ba b--white ph3 ph4-l pv2 pv3-l mb3 mb0-ns hover-bg-white hover-dark-gray fw6 br2">
                 {{ . }}
               </a>
             {{ end }}
