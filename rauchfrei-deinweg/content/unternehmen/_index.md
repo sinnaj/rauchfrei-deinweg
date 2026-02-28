@@ -2,8 +2,8 @@
 title: "Nichtraucherprogramme für Unternehmen"
 date: 2026-02-28T10:00:00+01:00
 draft: false
-description: "Unterstütze deine Mitarbeiter zum rauchfreien Leben. Maßgeschneiderte Seminare für korporative Wellness und Gesundheitsförderung."
-featured_image: ""
+description: "Professionelle Nichtraucherprogramme für Ihre Mitarbeiter. Maßgeschneiderte Seminare mit hoher Erfolgsquote."
+featured_image: "/images/fruehling_breath2.jpeg"
 tags: ["Unternehmen", "Wellness", "Gesundheitsförderung"]
 ---
 
