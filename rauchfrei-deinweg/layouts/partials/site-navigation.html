@@ -6,12 +6,12 @@
     </a>
 
     <!-- Hamburger Menu Button (Mobile Only) -->
-    <button class="hamburger-toggle dn-l bn bg-transparent pointer dark-green f3" id="nav-toggle" aria-label="Toggle navigation">
+    <button class="hamburger-toggle bn bg-transparent pointer dark-green f3" id="nav-toggle" aria-label="Toggle navigation" style="display: none;">
       ☰
     </button>
 
     <!-- Navigation Menu -->
-    <div class="nav-menu dn-m dn-ns flex-l items-center" id="nav-menu">
+    <div class="nav-menu flex-l items-center" id="nav-menu" style="display: none;">
       {{ if .Site.Menus.main }}
         <ul class="list pl0 ml3 flex">
           {{ range .Site.Menus.main }}
@@ -28,18 +28,41 @@
 </nav>
 
 <script>
+  // Show/hide hamburger button based on screen size
+  function toggleHamburgerVisibility() {
+    var hamburger = document.getElementById('nav-toggle');
+    var menu = document.getElementById('nav-menu');
+    var screenWidth = window.innerWidth;
+    
+    if (screenWidth < 960) {
+      // Mobile/tablet - show hamburger, hide menu by default
+      hamburger.style.display = 'block';
+      menu.style.display = 'none';
+    } else {
+      // Desktop - hide hamburger, always show menu
+      hamburger.style.display = 'none';
+      menu.style.display = 'flex';
+    }
+  }
+
+  // Initial check
+  window.addEventListener('DOMContentLoaded', toggleHamburgerVisibility);
+  window.addEventListener('resize', toggleHamburgerVisibility);
+
   // Hamburger menu toggle for mobile
   document.getElementById('nav-toggle').addEventListener('click', function() {
     var menu = document.getElementById('nav-menu');
-    menu.classList.toggle('dn-m');
-    menu.classList.toggle('dn-ns');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'flex';
+    } else {
+      menu.style.display = 'none';
+    }
   });
 
   // Close menu when a link is clicked
   document.querySelectorAll('#nav-menu a').forEach(function(link) {
     link.addEventListener('click', function() {
-      document.getElementById('nav-menu').classList.add('dn-m');
-      document.getElementById('nav-menu').classList.add('dn-ns');
+      document.getElementById('nav-menu').style.display = 'none';
     });
   });
 </script>

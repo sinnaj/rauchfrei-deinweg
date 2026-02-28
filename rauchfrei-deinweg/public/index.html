@@ -16,7 +16,7 @@
     
 
     
-<link rel="stylesheet" href="/rauchfrei-deinweg/ananke/css/main.min.4baabe180ce4616ef2708c1a830b69322b5e8fe815beb09f1d357a668e797332.css" >
+<link rel="stylesheet" href="/rauchfrei-deinweg/ananke/css/main.min.a5050e50db26aaddf9e6e941fcde32297d149ac553963750d497f28069ef23db.css" >
 
 
 
@@ -81,12 +81,12 @@
     </a>
 
     
-    <button class="hamburger-toggle dn-l bn bg-transparent pointer dark-green f3" id="nav-toggle" aria-label="Toggle navigation">
+    <button class="hamburger-toggle bn bg-transparent pointer dark-green f3" id="nav-toggle" aria-label="Toggle navigation" style="display: none;">
       ☰
     </button>
 
     
-    <div class="nav-menu dn-m dn-ns flex-l items-center" id="nav-menu">
+    <div class="nav-menu flex-l items-center" id="nav-menu" style="display: none;">
       
         <ul class="list pl0 ml3 flex">
           
@@ -110,17 +110,40 @@
 
 <script>
   
+  function toggleHamburgerVisibility() {
+    var hamburger = document.getElementById('nav-toggle');
+    var menu = document.getElementById('nav-menu');
+    var screenWidth = window.innerWidth;
+    
+    if (screenWidth < 960) {
+      
+      hamburger.style.display = 'block';
+      menu.style.display = 'none';
+    } else {
+      
+      hamburger.style.display = 'none';
+      menu.style.display = 'flex';
+    }
+  }
+
+  
+  window.addEventListener('DOMContentLoaded', toggleHamburgerVisibility);
+  window.addEventListener('resize', toggleHamburgerVisibility);
+
+  
   document.getElementById('nav-toggle').addEventListener('click', function() {
     var menu = document.getElementById('nav-menu');
-    menu.classList.toggle('dn-m');
-    menu.classList.toggle('dn-ns');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'flex';
+    } else {
+      menu.style.display = 'none';
+    }
   });
 
   
   document.querySelectorAll('#nav-menu a').forEach(function(link) {
     link.addEventListener('click', function() {
-      document.getElementById('nav-menu').classList.add('dn-m');
-      document.getElementById('nav-menu').classList.add('dn-ns');
+      document.getElementById('nav-menu').style.display = 'none';
     });
   });
 </script>
@@ -202,11 +225,11 @@ Die Vorteile eines rauchfreien Lebens sind immens: verbesserte Gesundheit, mehr 
 <hr>
 <h3 id="die-kursleiterin">Die Kursleiterin</h3>
 <div class="flex flex-column mb5">
-  <div class="w-100 tc" style="margin-bottom: 20px;">
+  <div class="w-100 tc" style="margin-bottom: 0;">
     <img src="/rauchfrei-deinweg/images/meik_instructor_circled_nobg-removebg-preview.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto;">
   </div>
   <div class="w-100">
-    <h4 class="f4 fw6 dark-green mb3">Dipl.-Päd. Christiane Meik</h4>
+    <h4 class="f4 fw6 dark-green mb3" style="margin-top: 20px;">Dipl.-Päd. Christiane Meik</h4>
     <p class="f5 lh-copy mb3">
       <strong>Professionelle Begleitung:</strong> Erfahrene Expertin und Ex-Raucherin unterstützt Sie mit bewährten Strategien und individueller Beratung.
     </p>
