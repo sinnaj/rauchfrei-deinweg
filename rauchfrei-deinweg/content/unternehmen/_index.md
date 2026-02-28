@@ -4,6 +4,8 @@ date: 2026-02-28T10:00:00+01:00
 draft: false
 description: "Professionelle Nichtraucherprogramme für Ihre Mitarbeiter. Maßgeschneiderte Seminare mit hoher Erfolgsquote."
 featured_image: "/images/fruehling_breath2.jpeg"
+cta_text: "JETZT ANFRAGEN!"
+cta_link: "mailto:info@meik-gesundheit.de?subject=Firmenseminar%20Nichtraucherprogramm%20Anfrage"
 tags: ["Unternehmen", "Wellness", "Gesundheitsförderung"]
 ---
 
