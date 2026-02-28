@@ -2,7 +2,7 @@
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image_class := site.Params.featured_image_class | compare.Default "cover bg-center" }}
-  <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}'); background-position: center 0%; min-height: 70vh;">
+  <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}'); background-position: center 20%; min-height: 70vh;">
     {{ $cover_dimming_class := site.Params.cover_dimming_class | compare.Default "bg-black-60" }}
     <div class="{{ $cover_dimming_class }}" style="min-height: 70vh; display: flex; flex-direction: column;">
       {{ partials.Include "site-navigation.html" .}}
