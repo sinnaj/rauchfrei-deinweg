@@ -34,6 +34,28 @@ Die Vorteile eines rauchfreien Lebens sind immens: verbesserte Gesundheit, mehr 
 
 ---
 
+### Die Kursleiterin
+
+<div class="flex flex-column flex-row-ns items-center-ns mb5">
+  <div class="w-100 w-40-ns mb4 mb0-ns mr0 mr4-ns tc">
+    <img src="/images/Meik_Instructor_Circled.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto;">
+  </div>
+  <div class="w-100 w-60-ns">
+    <h4 class="f4 fw6 dark-green mb3">Dipl.-Päd. Christiane Meik</h4>
+    <p class="f5 lh-copy mb3">
+      <strong>Professionelle Begleitung:</strong> Erfahrene Expertin und Ex-Raucherin unterstützt Sie mit bewährten Strategien und individueller Beratung.
+    </p>
+    <p class="f5 lh-copy mb3">
+      Mental-Coach und zertifizierte Trainerin mit langjähriger therapeutischer Erfahrung. Von 2003 bis 2025 Tätigkeit in eigener Privatpraxis als Heilpraktikerin für Psychotherapie. Ab 2026 Schwerpunktverlagerung auf psychologisch fundiertes Mental-Coaching, Online-Coaching sowie Gesundheits- und Präventionsseminare für Unternehmen (u. a. Stressbewältigung und Nichtraucherprogramme).
+    </p>
+    <p class="f5 lh-copy">
+      <em>Meine Motivation, Coaching und Gesundheitskurse anzubieten, entspringt dem tiefen Wunsch, Menschen auf ihrem Weg zu mehr Lebensqualität, Balance und innerer Stärke zu begleiten. Ich glaube daran, dass jeder Mensch das Potenzial hat, aktiv etwas für sein Wohlbefinden zu tun – körperlich, mental und emotional.</em>
+    </p>
+  </div>
+</div>
+
+---
+
 ### Häufig gestellte Fragen
 
 **Wann beginnt der nächste Kurs?**

@@ -16,7 +16,7 @@
     
 
     
-<link rel="stylesheet" href="/ananke/css/main.min.fa9c276433e94a769890531e93d0c85d9fde5f41f4d130de7b682062fec6778e.css" >
+<link rel="stylesheet" href="/ananke/css/main.min.a44035c6ec4dc04cc9222d73028d8e0ba7a8132b2cceb1125448a09956113fba.css" >
 
 
 
@@ -198,7 +198,7 @@
     <div class="modal-header">
       <h3 class="ma0 f4 f3-l fw6 white">Kurs-Anmeldung</h3>
     </div>
-    <form id="anmeldung-form" action="https://formsubmit.co/ajax/cmeik@gmail.com" method="POST">
+    <form id="anmeldung-form" action="https://formsubmit.co/ajax/info@meik-gesundheit.de" method="POST">
       
       <input type="hidden" name="_subject" value="Neue Kurs-Anmeldung - Rauchfrei Dein Weg">
       <input type="hidden" name="_template" value="table">
@@ -218,8 +218,18 @@
           <input type="email" id="email" name="E-Mail" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="deine@email.de">
         </div>
         <div class="mb3">
-          <label class="db fw6 mb1 f6" for="adresse">Adresse *</label>
-          <input type="text" id="adresse" name="Adresse" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="Straße, Nr., PLZ, Ort">
+          <label class="db fw6 mb1 f6" for="strasse">Straße und Hausnummer *</label>
+          <input type="text" id="strasse" name="Straße" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="Musterstraße 12">
+        </div>
+        <div class="mb3 flex flex-column flex-row-ns">
+          <div class="w-100 w-30-ns mr0 mr3-ns mb3 mb0-ns">
+            <label class="db fw6 mb1 f6" for="plz">PLZ *</label>
+            <input type="text" id="plz" name="PLZ" required pattern="[0-9]{5}" maxlength="5" class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="12345">
+          </div>
+          <div class="w-100 w-70-ns">
+            <label class="db fw6 mb1 f6" for="stadt">Stadt *</label>
+            <input type="text" id="stadt" name="Stadt" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="Berlin">
+          </div>
         </div>
         <div class="mb3">
           <label class="db fw6 mb1 f6" for="telefon">Telefonnummer <span class="fw4 gray">(optional)</span></label>
