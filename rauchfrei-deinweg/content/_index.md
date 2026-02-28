@@ -6,6 +6,8 @@ description: "Beginne dein rauchfreies Leben mit unserem unterstützenden Nichtr
 featured_image: "/images/nichraucher_hero.jpg"
 cta_text: "JETZT ANMELDEN!"
 cta_link: "/anmeldung"
+cta_text_secondary: "Informationen für Unternehmen"
+cta_link_secondary: "/unternehmen"
 tags: ["Nichtraucher", "Gesundheit", "Kurs", "Aufhören"]
 featured: true
 ---

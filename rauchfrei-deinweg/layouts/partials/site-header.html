@@ -15,11 +15,18 @@
             {{ . }}
           </h2>
         {{ end }}
-        {{ with .Params.cta_text }}
-          <div class="mt4">
-            <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f5 no-underline grow dib v-mid bg-green white ba b--green ph3 pv2 mb3 hover-bg-dark-green" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
-              {{ . }}
-            </a>
+        {{ if or .Params.cta_text .Params.cta_text_secondary }}
+          <div class="mt4 flex flex-wrap justify-center items-center">
+            {{ with .Params.cta_text }}
+              <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f5 no-underline grow dib v-mid bg-green white ba b--green ph3 pv2 mb3 mr2 hover-bg-dark-green" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
+                {{ . }}
+              </a>
+            {{ end }}
+            {{ with .Params.cta_text_secondary }}
+              <a href="{{ $.Params.cta_link_secondary | compare.Default "#" }}" class="f5 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3 hover-bg-white hover-dark-gray" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
+                {{ . }}
+              </a>
+            {{ end }}
           </div>
         {{ end }}
       </div>
@@ -38,11 +45,18 @@
             {{ . }}
           </h2>
         {{ end }}
-        {{ with .Params.cta_text }}
-          <div class="mt4">
-            <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f5 no-underline grow dib v-mid bg-green white ba b--green ph3 pv2 mb3 hover-bg-dark-green" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
-              {{ . }}
-            </a>
+        {{ if or .Params.cta_text .Params.cta_text_secondary }}
+          <div class="mt4 flex flex-wrap justify-center items-center">
+            {{ with .Params.cta_text }}
+              <a href="{{ $.Params.cta_link | compare.Default "#" }}" class="f5 no-underline grow dib v-mid bg-green white ba b--green ph3 pv2 mb3 mr2 hover-bg-dark-green" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
+                {{ . }}
+              </a>
+            {{ end }}
+            {{ with .Params.cta_text_secondary }}
+              <a href="{{ $.Params.cta_link_secondary | compare.Default "#" }}" class="f5 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3 hover-bg-white hover-dark-gray" style="font-weight: bold; padding: 15px 30px; font-size: 1.2em; border-radius: 5px;">
+                {{ . }}
+              </a>
+            {{ end }}
           </div>
         {{ end }}
       </div>
