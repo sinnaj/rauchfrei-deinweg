@@ -11,26 +11,26 @@ tags: ["Unternehmen", "Wellness", "Gesundheitsförderung"]
 
 Als Ex-Raucherin biete ich Firmenseminare nach dem Rauchfrei-Programm in verschiedenen Formaten an. Meine langjährige persönliche Erfahrung und professionelle Expertise helfen Ihren Mitarbeitern, erfolgreich rauchfrei zu werden.
 
-{{< highlight-box title="Seminarformate" >}}
+{{< info-box title="Seminarformate" >}}
 * **Tagesseminar:** 8 Unterrichtsstunden an einem Tag – intensiv und effektiv
 * **Vierwochenprogramm:** 1 Termin pro Woche über 4 Wochen mit insgesamt 14 Unterrichtsstunden – nachhaltig und unterstützend
 * **Teilnehmerzahl:** 8 – 15 Personen pro Seminar (optimal für Gruppendynamik und individuelle Betreuung)
 * **Kontaktaufnahme:** Nehmen Sie gerne Kontakt auf für ein maßgeschneidertes Angebot
-{{< /highlight-box >}}
+{{< /info-box >}}
 
 ## Mein Angebot
 
 Ein Nichtraucherkurs nach dem **Rauchfrei-Programm vom IFT** – eine Raucherentwöhnung für Gruppen auf Basis von gegenseitiger und professioneller Unterstützung.
 
-### Besondere Merkmale dieser Nichtraucherkurse:
-
-- **Hohe und seriös nachgewiesene Erfolgsquote** (www.rauchfrei-programm.de)
-- **Ein gemeinsamer Rauchstopp** nach der bewährten Punkt-Schluss-Methode
-- **Individuelle telefonische Unterstützung** am 3. Tag des Rauchstopps
-- **Individuelle Vorbereitung** auf den Rauchstopp und professionelle Begleitung durch eine erfahrene Ex-Raucherin und Suchtexpertin
-- **Besondere Rückfallprophylaxe** für einen nachhaltigen Rauchstopp
-- **Wertvolles Kurshandbuch** zum Nachschlagen und zur Inspiration – für dauerhafte Nachhaltigkeit
-- **Wissenschaftlich bewährte Methoden** zur Raucherentwöhnung nach aktuellen Erkenntnissen
+{{< highlight-box title="Besondere Merkmale dieser Nichtraucherkurse" >}}
+* **Hohe und seriös nachgewiesene Erfolgsquote** (www.rauchfrei-programm.de)
+* **Ein gemeinsamer Rauchstopp** nach der bewährten Punkt-Schluss-Methode
+* **Individuelle telefonische Unterstützung** am 3. Tag des Rauchstopps
+* **Individuelle Vorbereitung** auf den Rauchstopp und professionelle Begleitung durch eine erfahrene Ex-Raucherin und Suchtexpertin
+* **Besondere Rückfallprophylaxe** für einen nachhaltigen Rauchstopp
+* **Wertvolles Kurshandbuch** zum Nachschlagen und zur Inspiration – für dauerhafte Nachhaltigkeit
+* **Wissenschaftlich bewährte Methoden** zur Raucherentwöhnung nach aktuellen Erkenntnissen
+{{< /highlight-box >}}
 
 ### Ergänzung: Hypnose zur Raucherentwöhnung (optional)
 
