@@ -12,3 +12,13 @@ theme = 'ananke'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[[menu.main]]
+  name = "Startseite"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Für Unternehmen"
+  url = "/unternehmen/"
+  weight = 2

@@ -1,0 +1,45 @@
+<nav class="fixed top-0 left-0 right-0 z-999 bg-white shadow-1" role="navigation">
+  <div class="flex items-center justify-between pv3 ph3 ph4-ns mw9-l center-l">
+    <!-- Logo/Site Title -->
+    <a href="{{ .Site.Home.RelPermalink }}" class="f4 fw6 dark-green hover-green no-underline dib">
+      {{ .Site.Title }}
+    </a>
+
+    <!-- Hamburger Menu Button (Mobile Only) -->
+    <button class="hamburger-toggle dn-l bn bg-transparent pointer dark-green f3" id="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu dn-m dn-ns flex-l items-center" id="nav-menu">
+      {{ if .Site.Menus.main }}
+        <ul class="list pl0 ml3 flex">
+          {{ range .Site.Menus.main }}
+          <li class="f5 f4-ns fw5 dib pr4">
+            <a class="dark-green hover-green no-underline" href="{{ .URL }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Hamburger menu toggle for mobile
+  document.getElementById('nav-toggle').addEventListener('click', function() {
+    var menu = document.getElementById('nav-menu');
+    menu.classList.toggle('dn-m');
+    menu.classList.toggle('dn-ns');
+  });
+
+  // Close menu when a link is clicked
+  document.querySelectorAll('#nav-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-menu').classList.add('dn-m');
+      document.getElementById('nav-menu').classList.add('dn-ns');
+    });
+  });
+</script>

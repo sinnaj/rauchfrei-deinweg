@@ -174,3 +174,83 @@ a.bg-green:active {
   border-color: #999;
   color: #333;
 }
+/* Sticky Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger Menu Button */
+.hamburger-toggle {
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.hamburger-toggle:hover {
+  color: #137752;
+}
+
+/* Navigation Menu - Mobile Styles */
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e5e5e5;
+  padding: 1rem 0;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-menu ul {
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-menu li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-menu li:last-child {
+  border-bottom: none;
+}
+
+/* Desktop Navigation - Always visible */
+@media screen and (min-width: 60em) {
+  .nav-menu {
+    position: static;
+    background: transparent;
+    border-top: none;
+    padding: 0;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .nav-menu ul {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .nav-menu li {
+    padding: 0;
+    border-bottom: none;
+    margin-left: 2rem;
+  }
+
+  .hamburger-toggle {
+    display: none !important;
+  }
+}
+
+/* Ensure body has padding for fixed nav */
+body {
+  padding-top: 60px;
+}
