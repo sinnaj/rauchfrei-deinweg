@@ -50,6 +50,8 @@
   content: "✓";
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   color: #19a974;
   font-weight: 700;
   font-size: 1.1rem;
@@ -109,6 +111,8 @@
 
 .info-box-content ul li::before {
   content: "◆";
+  top: 50%;
+  transform: translateY(-50%);
   position: absolute;
   left: 0;
   color: #2196f3;
