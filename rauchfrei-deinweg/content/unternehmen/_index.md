@@ -34,10 +34,6 @@ Ein Nichtraucherkurs nach dem **Rauchfrei-Programm vom IFT** – eine Raucherent
 * **Wissenschaftlich bewährte Methoden** zur Raucherentwöhnung nach aktuellen Erkenntnissen
 {{< /highlight-box >}}
 
-### Ergänzung: Hypnose zur Raucherentwöhnung (optional)
-
-Ergänzend biete ich den Teilnehmenden nach Wunsch und ohne Kontraindikationen zusätzlich Hypnose zur Raucherentwöhnung an. Das Unterbewusstsein als Bündnispartner kann helfen, alle Blockaden zu lösen, die der Rauchfreiheit entgegenstehen könnten.
-
 ## Über die Trainerin
 
 **Dipl.-Päd. Christiane Meik** – Heilpraktikerin für Psychotherapie, Mental-Coach, zertifizierte Trainerin und **Ex-Raucherin**

@@ -241,7 +241,7 @@ a.bg-green:active {
 }
 
 /* Sticky Navigation Bar */
-nav {
+header nav {
   position: fixed;
   top: 0;
   left: 0;
