@@ -98,15 +98,7 @@ function resetAnmeldungForm() {
   document.getElementById('submit-btn').textContent = 'Jetzt verbindlich anmelden';
 }
 
-// Close modal on overlay click
-document.getElementById('anmeldung-modal').addEventListener('click', function(e) {
-  if (e.target === this) closeAnmeldungModal();
-});
-
-// Close on Escape key
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeAnmeldungModal();
-});
+// Modal only closes via Abbrechen button — no overlay click or Escape key
 
 // Form submission via AJAX
 document.getElementById('anmeldung-form').addEventListener('submit', function(e) {
