@@ -19,7 +19,7 @@ Sind Sie bereit, sich von der Zigarette zu verabschieden und ein gesünderes, en
 **Investieren Sie in Ihre Gesundheit – es lohnt sich!**
 Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krankheiten sind nur einige der Vorteile, die auf Sie warten. Es ist die beste Zeit, die Kontrolle über Ihre Gesundheit zurückzugewinnen.
 
-{{< highlight-box title="Was erwartet Sie in unserem Programm?" >}}
+{{< highlight-box title="Was erwartet Sie in meinem Programm?" >}}
 * **Professionelle Begleitung:** Dipl.-Päd. Christiane Meik – erfahrene Expertin und Ex-Raucherin unterstützt Sie mit bewährten Strategien und individueller Beratung.
 * **Stärkung Ihrer Motivation:** Entdecken Sie Ihre persönlichen Gründe für ein rauchfreies Leben und lernen Sie, wie Sie dieses aufrechterhalten.
 * **Umgang mit Entzugserscheinungen:** Frau Meik zeigt Ihnen effektive Wege, mit Verlangen und Stress umzugehen.
@@ -60,14 +60,14 @@ Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krank
 ### Häufig gestellte Fragen
 
 **Wann beginnt der nächste Kurs?**
-Neue Kurse starten regelmäßig. Die genauen Termine findest du auf unserer Anmeldeseite.
+Neue Kurse starten regelmäßig. Die genauen Termine finden Sie auf meiner Anmeldeseite.
 
 **Ist der Kurs für jeden geeignet?**
-Unser Kurs richtet sich an alle erwachsenen Raucher, die ernsthaft den Wunsch haben, mit dem Rauchen aufzuhören. Egal, wie lange du schon rauchst, wir sind für dich da.
+Mein Kurs richtet sich an alle erwachsenen Raucher, die ernsthaft den Wunsch haben, mit dem Rauchen aufzuhören. Egal, wie lange Sie schon rauchen, ich bin für Sie da.
 
 **Was kostet der Kurs?**
-Informationen zu den Kursgebühren und möglichen Zuschüssen der Krankenkasse erhältst du auf unserer Anmeldeseite.
+Informationen zu den Kursgebühren und möglichen Zuschüssen der Krankenkasse erhalten Sie auf meiner Anmeldeseite.
 
 ---
 
-Wir freuen uns darauf, dich auf deinem Weg in ein rauchfreies Leben zu begleiten!
+Ich freue mich darauf, Sie auf Ihrem Weg in ein rauchfreies Leben zu begleiten!

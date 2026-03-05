@@ -8,8 +8,11 @@ build:
   list: never
 ---
 
-### Honorar
+### Verbindlichkeit der Anmeldung
 
-Das Honorar für die verschiedenen Angebote finden Sie bei den Kosten.
+Für die Kurse gilt: Eine Anmeldung oder Stornierung kann nur schriftlich erfolgen. Falls es zu einer Überbuchung gekommen ist, erfolgt die Platzvergabe in der Reihenfolge des Eingangs der Kursgebühr. Bitte beachten Sie, eine nicht bezahlte Kursgebühr ist keine Stornierung. Die Seminargebühr ist in voller Höhe mindestens 2 Wochen vor
 
-Für das Coaching erfolgt das Honorar nach Abschluss des Vertrages, der mündlich oder schriftlich erfolgen kann, per Überweisung jeweils vor der Sitzung. Bei kurzfristiger Absage 1 - 2 Tage vor dem Termin kann eine Ausfallgebühr von 50 % des Honorars erhoben werden. Bei Absage am Tag des Termins oder bei Nichterscheinen beträgt die Ausfallgebühr 100%, weil der Platz so kurzfristig nicht anderweitig vergeben werden kann.
+Beginn der Veranstaltung zu überweisen. Bei kurzfristiger Absage, d. h. ab 14 Tagen vor Kursbeginn, ist die volle Kursgebühr zu entrichten, sofern kein(e) Ersatzteilnehmer(in) gestellt wird.
+
+Die Kursanmeldung kann innerhalb einer Woche nach Anmeldung kostenlos schriftlich storniert werden. Ausnahme ist, wenn die Anmeldung erst 14 Tage vor Kursbeginn erfolgt ist. Die Veranstalterin behält sich vor, Kurse nicht stattfinden zu lassen, wenn nicht genügend Anmeldungen erfolgt sind. Die bereits gezahlten Kursgebühren werden dann selbstverständlich erstattet.
+Bei vorzeitigem Abbruch eines laufenden Kurses, besteht kein Anspruch auf die Erstattung der anteiligen Seminargebühren. Der Teilnehmerin, dem Teilnehmer ist bekannt, dass die Teilnahme an den Kursen der eigenen Verantwortlichkeit unterliegt. Bei den Kursen handelt es sich um Präventionsangebote, die keine Therapie ersetzen können. Die Teilnahme an den Gruppen erfolgt auf eigene Verantwortung.
