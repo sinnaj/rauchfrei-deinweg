@@ -44,6 +44,8 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
+          HUGO_PARAMS_ADMINUSERNAME: ${{ secrets.ADMIN_USERNAME }}
+          HUGO_PARAMS_ADMINPASSWORDHASH: ${{ secrets.ADMIN_PASSWORD_HASH }}
         run: |
           hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 

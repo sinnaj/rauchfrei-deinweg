@@ -18,9 +18,11 @@
           {{ end }}
           <!-- Urgency Banner - Only on HomePage -->
           {{ if not .IsSection }}
+            {{- $urgencyText := site.Data.site_content.hero.urgency_text | default "Nächster Kurs bald" -}}
+            {{- $urgencySubtext := site.Data.site_content.hero.urgency_subtext | default "Jetzt anmelden!" -}}
             <div class="hero-urgency-banner dib mt3 mb4">
-              <span class="db f5 f4-l fw7 white">Nächster Kurs 26.03.26</span>
-              <span class="db f6 f5-l fw5 gold mt1">Nur noch begrenzt Plätze!</span>
+              <span class="db f5 f4-l fw7 white">{{ $urgencyText }}</span>
+              <span class="db f6 f5-l fw5 gold mt1">{{ $urgencySubtext }}</span>
             </div>
           {{ end }}
 
