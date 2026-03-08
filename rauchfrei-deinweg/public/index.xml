@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier on Rauchfrei - Dein Weg</title><link>/rauchfrei-deinweg/</link><description>Recent content in Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier on Rauchfrei - Dein Weg</description><generator>Hugo</generator><language>de-de</language><lastBuildDate/><atom:link href="/rauchfrei-deinweg/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier on Rauchfrei - Dein Weg</title>
+    <link>//localhost:64862///rauchfrei-deinweg/</link>
+    <description>Recent content in Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier on Rauchfrei - Dein Weg</description>
+    <generator>Hugo</generator>
+    <language>de-de</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="//localhost:64862///rauchfrei-deinweg/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de-de">
-  <head><script src="///rauchfrei-deinweg/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=//rauchfrei-deinweg/livereload" data-no-instant defer></script>
+  <head><script src="///rauchfrei-deinweg/livereload.js?mindelay=10&amp;v=2&amp;port=64862&amp;path=//rauchfrei-deinweg/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -39,12 +39,12 @@
     
 
     
-      <link rel="canonical" href="//localhost:1314///rauchfrei-deinweg/">
+      <link rel="canonical" href="//localhost:64862///rauchfrei-deinweg/">
     
 
     
     
-    <meta property="og:url" content="//localhost:1314///rauchfrei-deinweg/">
+    <meta property="og:url" content="//localhost:64862///rauchfrei-deinweg/">
   <meta property="og:site_name" content="Rauchfrei - Dein Weg">
   <meta property="og:title" content="Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier">
   <meta property="og:description" content="Professionelle Unterstützung zur Rauchentwöhnung mit Dipl.-Päd. Christiane Meik. Starten Sie noch heute Ihren Weg in ein rauchfreies Leben!">
@@ -67,7 +67,7 @@
 
   
   
-  <header class="cover bg-center" style="background-image: url('//localhost:1314/rauchfrei-deinweg/images/fruehling_breath2.jpeg'); background-position: center 30%; min-height: 70vh;">
+  <header class="cover bg-center" style="background-image: url('//localhost:64862/rauchfrei-deinweg/images/fruehling_breath2.jpeg'); background-position: center 30%; min-height: 70vh;">
     
     <div class="bg-black-60" style="min-height: 70vh; display: flex; flex-direction: column;">
       <nav class="fixed top-0 left-0 right-0 z-999 bg-white shadow-1" role="navigation">
@@ -166,16 +166,22 @@
           
             <div class="flex flex-column flex-row-ns flex-wrap justify-center">
               
-                <a href="//localhost:1314///rauchfrei-deinweg/anmeldung" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
+                <a href="//localhost:64862///rauchfrei-deinweg/anmeldung" class="f6 f5-l no-underline grow dib v-mid bg-green white ba b--green ph3 ph4-l pv2 pv3-l mb3 mb0-ns mr0 mr3-ns hover-bg-dark-green fw6 br2">
                   JETZT ANMELDEN!
                 </a>
               
               
-                <a href="//localhost:1314///rauchfrei-deinweg/unternehmen/" class="f6 f5-l no-underline grow dib v-mid white ba b--white ph3 ph4-l pv2 pv3-l mb3 mb0-ns hover-bg-white hover-dark-gray fw6 br2">
+                <a href="//localhost:64862///rauchfrei-deinweg/unternehmen/" class="f6 f5-l no-underline grow dib v-mid white ba b--white ph3 ph4-l pv2 pv3-l mb3 mb0-ns hover-bg-white hover-dark-gray fw6 br2">
                   Für Unternehmen
                 </a>
               
             </div>
+            
+            
+              <div class="hero-krankenkasse-info dib mt3">
+                <span class="f6 f5-l white-80">✓ Bezuschusst von Ihrer Krankenkasse!</span>
+              </div>
+            
           
         </div>
       </div>
@@ -265,7 +271,7 @@ Informationen zu den Kursgebühren und möglichen Zuschüssen der Krankenkasse e
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex flex-column flex-row-ns justify-between items-center">
-    <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="//localhost:1314///rauchfrei-deinweg/">
+    <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="//localhost:64862///rauchfrei-deinweg/">
       &copy;  Rauchfrei - Dein Weg 2026 
     </a>
     <nav class="flex flex-wrap justify-center pv2 ph3">
@@ -411,10 +417,13 @@ document.getElementById('anmeldung-form').addEventListener('submit', function(e)
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a[href="/anmeldung"], a[href="/anmeldung/"]').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      openAnmeldungModal(e);
-    });
+  document.querySelectorAll('a').forEach(function(link) {
+    var href = link.getAttribute('href') || '';
+    if (href.replace(/\/$/, '').endsWith('/anmeldung') || href === '/anmeldung' || href === '/anmeldung/') {
+      link.addEventListener('click', function(e) {
+        openAnmeldungModal(e);
+      });
+    }
   });
 });
 </script>
