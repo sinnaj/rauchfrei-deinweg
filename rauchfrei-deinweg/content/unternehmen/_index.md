@@ -9,9 +9,9 @@ cta_link: "mailto:info@meik-gesundheit.de?subject=Firmenseminar%20Nichtraucherpr
 tags: ["Unternehmen", "Wellness", "Gesundheitsförderung"]
 ---
 
-Die Nichtraucherseminare des Rauchfrei-Programms wurden nach § 20 Abs. 1 SGB V als förderungswürdig anerkannt und zertifiziert.
+<p style="text-align: center; font-style: italic;">Die Nichtraucherseminare des Rauchfrei-Programms wurden nach § 20 Abs. 1 SGB V als förderungswürdig anerkannt und zertifiziert.</p>
 
-# Firmenseminare zur Rauchentwöhnung
+# Firmenseminare zur Raucherentwöhnung
 
 Als Ex-Raucherin biete ich Firmenseminare nach dem Rauchfrei-Programm in verschiedenen Formaten an. Meine langjährige persönliche Erfahrung und professionelle Expertise helfen Ihren Mitarbeitern, erfolgreich rauchfrei zu werden.
 
