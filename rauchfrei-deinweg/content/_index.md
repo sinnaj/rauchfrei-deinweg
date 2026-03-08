@@ -42,9 +42,9 @@ Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krank
     <img src="/rauchfrei-deinweg/images/meik_instructor_circled_nobg-removebg-preview.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto; margin-bottom: 20px !important;">
   </div>
   <div class="w-100">
-    <h4 class="f4 fw6 dark-green mb3" style="margin-top: 0 !important;">Dipl.-Päd. Christiane Meik</h4>
+    <h4 class="f4 fw6 dark-green mb3" style="margin-top: 0 !important;">Dipl.-Päd. Christiane Meik (Ex-Raucherin)</h4>
     <p class="f5 lh-copy mb3">
-      <strong>Professionelle Begleitung:</strong> Mit über 20 Jahren Erfahrung als Expertin und Ex-Raucherin unterstützt sie Sie in zertifizierten Nichtraucherkursen mit bewährten Strategien und individueller Beratung.
+      <strong>Professionelle Begleitung:</strong> Mit über 20 Jahren Erfahrung als Expertin für Raucherentwöhnung unterstützt sie Sie in zertifizierten Nichtraucherkursen mit bewährten Strategien und individueller Beratung.
     </p>
     <p class="f5 lh-copy mb3">
       Mental-Coach und zertifizierte Trainerin mit langjähriger therapeutischer Erfahrung. Von 2003 bis 2025 Tätigkeit in eigener Privatpraxis als Heilpraktikerin für Psychotherapie. Ab 2026 Schwerpunktverlagerung auf psychologisch fundiertes Mental-Coaching, Online-Coaching sowie Gesundheits- und Präventionsseminare für Unternehmen (u. a. Stressbewältigung und Nichtraucherprogramme).

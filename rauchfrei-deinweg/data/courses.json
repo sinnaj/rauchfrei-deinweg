@@ -1,28 +1,28 @@
 {
   "courses": [
     {
-      "bookable": false,
-      "date": "2026-03-26",
-      "id": "course-1",
-      "title": "Nicht Buchbar März",
-      "start_time": "18:00",
-      "end_time": "20:00"
-    },
-    {
-      "id": "course-1772978299421",
-      "title": "Nicht Buchbar April",
-      "date": "2026-04-17",
-      "bookable": false,
-      "start_time": "18:00",
-      "end_time": "20:00"
-    },
-    {
-      "id": "course-1772978328471",
-      "title": "Buchbar Mai",
-      "date": "2026-05-15",
       "bookable": true,
-      "start_time": "18:00",
-      "end_time": "20:00"
+      "date": "2026-04-11",
+      "id": "course-1772978328471",
+      "title": "Rauchfrei Tageskurs // April",
+      "start_time": "",
+      "end_time": ""
+    },
+    {
+      "id": "course-1772995813488",
+      "title": "Rauchfrei Tageskurs // Mai",
+      "date": "2026-05-23",
+      "bookable": true,
+      "start_time": "",
+      "end_time": ""
+    },
+    {
+      "id": "course-1772995855160",
+      "title": "Rauchfrei Tageskurs // Juni",
+      "date": "2026-06-20",
+      "bookable": true,
+      "start_time": "",
+      "end_time": ""
     }
   ]
 }
