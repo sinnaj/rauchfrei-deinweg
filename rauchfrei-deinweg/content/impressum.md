@@ -15,7 +15,7 @@ Barenbleek 10
 
 Tel.: 040/43 26 54 81
 
-Email: info(at)meik-gesundheit.de  
+Email: info@meik-gesundheit.de  
 Web: [www.rauchfrei-deinweg.de](https://rauchfrei-deinweg.de/)
 
 Diplom-Pädagogin Westfälische Wilhelms-Universität Münster; am 25.05.1985 fand die Verleihung des akademischen Grades Diplom-Pädagoge, gemäß der Diplom-Prüfungsordnung vom 10.7.1970 in der zur Zeit geltenden Fassung, statt.  
