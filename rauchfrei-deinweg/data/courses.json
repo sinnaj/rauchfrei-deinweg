@@ -1,22 +1,10 @@
 {
   "courses": [
     {
-      "bookable": false,
-      "date": "2026-03-26",
-      "id": "course-1",
-      "title": "Nicht Buchbar März"
-    },
-    {
-      "id": "course-1772978299421",
-      "title": "Nicht Buchbar April",
-      "date": "2026-04-17",
-      "bookable": false
-    },
-    {
+      "bookable": true,
+      "date": "2026-04-11",
       "id": "course-1772978328471",
-      "title": "Buchbar Mai",
-      "date": "2026-05-15",
-      "bookable": true
+      "title": "Rauchfrei Tageskurs"
     }
   ]
 }
