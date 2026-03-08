@@ -220,7 +220,7 @@ async function doLogin() {
   // Credentials must be configured
   if (!ADMIN_USERNAME || !ADMIN_PASS_HASH) {
     err.textContent = 'Admin-Zugangsdaten sind noch nicht konfiguriert. Bitte GitHub Secrets setzen (siehe Hilfe & Info).';
-    err.style.display = '';
+    err.style.display = 'block';
     return;
   }
 
@@ -231,7 +231,7 @@ async function doLogin() {
   var hash = await sha256hex(pass);
   if (user !== ADMIN_USERNAME || hash !== ADMIN_PASS_HASH) {
     err.textContent = 'Benutzername oder Passwort falsch.';
-    err.style.display = '';
+    err.style.display = 'block';
     btn.disabled = false;
     btn.textContent = 'Anmelden';
     return;
