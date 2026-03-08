@@ -2,7 +2,7 @@
 title: "Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier"
 date: 2023-10-27T10:00:00+01:00
 draft: false
-description: "Professionelle Unterstützung zur Rauchentwöhnung mit Dipl.-Päd. Christiane Meik. Starten Sie noch heute Ihren Weg in ein rauchfreies Leben!"
+description: "Professionelle Unterstützung zur Raucherentwöhnung mit Dipl.-Päd. Christiane Meik. Starten Sie noch heute Ihren Weg in ein rauchfreies Leben!"
 featured_image: "/images/fruehling_breath2.jpeg"
 cta_text: "JETZT ANMELDEN!"
 cta_link: "/anmeldung"
@@ -39,7 +39,7 @@ Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krank
 
 <div class="flex flex-column mb5">
   <div class="w-100 tc">
-    <img src="/rauchfrei-deinweg/images/meik_instructor_circled_nobg-removebg-preview.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto; margin-bottom: 20px !important;">
+    <img src="/images/meik_instructor_circled_nobg-removebg-preview.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto; margin-bottom: 20px !important;">
   </div>
   <div class="w-100">
     <h4 class="f4 fw6 dark-green mb3" style="margin-top: 0 !important;">Dipl.-Päd. Christiane Meik (Ex-Raucherin)</h4>
