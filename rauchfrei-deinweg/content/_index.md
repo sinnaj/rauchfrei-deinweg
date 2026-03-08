@@ -20,7 +20,7 @@ Sind Sie bereit, sich von der Zigarette zu verabschieden und ein gesünderes, en
 Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krankheiten sind nur einige der Vorteile, die auf Sie warten. Es ist die beste Zeit, die Kontrolle über Ihre Gesundheit zurückzugewinnen.
 
 {{< highlight-box title="Was erwartet Sie in meinem Programm?" >}}
-* **Professionelle Begleitung:** Dipl.-Päd. Christiane Meik – erfahrene Expertin und Ex-Raucherin unterstützt Sie mit bewährten Strategien und individueller Beratung.
+* **Professionelle Begleitung:** Dipl.-Päd. Christiane Meik – mit über 20 Jahren Erfahrung als Expertin und Ex-Raucherin unterstützt sie Sie in zertifizierten Nichtraucherkursen mit bewährten Strategien und individueller Beratung.
 * **Stärkung Ihrer Motivation:** Entdecken Sie Ihre persönlichen Gründe für ein rauchfreies Leben und lernen Sie, wie Sie dieses aufrechterhalten.
 * **Umgang mit Entzugserscheinungen:** Frau Meik zeigt Ihnen effektive Wege, mit Verlangen und Stress umzugehen.
 * **Langfristiger Erfolg:** Lernen Sie Strategien, um auch nach dem Rauchstopp dauerhaft rauchfrei zu bleiben.
@@ -44,7 +44,7 @@ Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krank
   <div class="w-100">
     <h4 class="f4 fw6 dark-green mb3" style="margin-top: 0 !important;">Dipl.-Päd. Christiane Meik</h4>
     <p class="f5 lh-copy mb3">
-      <strong>Professionelle Begleitung:</strong> Erfahrene Expertin und Ex-Raucherin unterstützt Sie mit bewährten Strategien und individueller Beratung.
+      <strong>Professionelle Begleitung:</strong> Mit über 20 Jahren Erfahrung als Expertin und Ex-Raucherin unterstützt sie Sie in zertifizierten Nichtraucherkursen mit bewährten Strategien und individueller Beratung.
     </p>
     <p class="f5 lh-copy mb3">
       Mental-Coach und zertifizierte Trainerin mit langjähriger therapeutischer Erfahrung. Von 2003 bis 2025 Tätigkeit in eigener Privatpraxis als Heilpraktikerin für Psychotherapie. Ab 2026 Schwerpunktverlagerung auf psychologisch fundiertes Mental-Coaching, Online-Coaching sowie Gesundheits- und Präventionsseminare für Unternehmen (u. a. Stressbewältigung und Nichtraucherprogramme).

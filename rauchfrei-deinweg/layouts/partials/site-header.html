@@ -20,9 +20,12 @@
           {{ if .IsHome }}
             {{- $urgencyText := site.Data.site_content.hero.urgency_text | default "Nächster Kurs bald" -}}
             {{- $urgencySubtext := site.Data.site_content.hero.urgency_subtext | default "Jetzt anmelden!" -}}
-            <div class="hero-urgency-banner dib mt3 mb4">
+            <div class="hero-urgency-banner dib mt3 mb3">
               <span class="db f5 f4-l fw7 white">{{ $urgencyText }}</span>
               <span class="db f6 f5-l fw5 gold mt1">{{ $urgencySubtext }}</span>
+            </div>
+            <div class="hero-krankenkasse-info dib mb4">
+              <span class="f6 f5-l white-80">✓ Bezuschusst von Ihrer Krankenkasse!</span>
             </div>
           {{ end }}
 
@@ -39,12 +42,6 @@
                 </a>
               {{ end }}
             </div>
-            <!-- Krankenkasse Info Box - Only on HomePage -->
-            {{ if not .IsSection }}
-              <div class="hero-krankenkasse-info dib mt3">
-                <span class="f6 f5-l white-80">✓ Bezuschusst von Ihrer Krankenkasse!</span>
-              </div>
-            {{ end }}
           {{ end }}
         </div>
       </div>
