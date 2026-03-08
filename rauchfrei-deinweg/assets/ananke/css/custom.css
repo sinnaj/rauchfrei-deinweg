@@ -316,3 +316,16 @@ header nav {
 body {
   padding-top: 60px;
 }
+/* Course card in registration modal */
+.course-card {
+  transition: border-color 0.15s, background 0.15s;
+  cursor: pointer;
+}
+.course-card:hover {
+  border-color: #2d7a2d !important;
+  background: #f8fdf8;
+}
+.course-card--selected {
+  border-color: #2d7a2d !important;
+  background: #f0faf0;
+}

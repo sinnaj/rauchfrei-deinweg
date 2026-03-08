@@ -4,14 +4,37 @@
     <div class="modal-header">
       <h3 class="ma0 f4 f3-l fw6 white">Kurs-Anmeldung</h3>
     </div>
-    <form id="anmeldung-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Step 1: Course Selection -->
+    <div id="anmeldung-step-1" style="display:none;">
+      <div class="modal-body">
+        <p class="f5 lh-copy mb3 dark-gray">Bitte wählen Sie einen Kurs:</p>
+        <div id="course-selection-list" class="mb3"></div>
+        <p id="no-courses-msg" class="f5 mid-gray tc pv3" style="display:none;">
+          Derzeit sind keine Kurse zur Anmeldung verfügbar. Bitte schauen Sie zu einem späteren Zeitpunkt wieder vorbei.
+        </p>
+      </div>
+      <div class="modal-footer flex flex-column flex-row-ns justify-end">
+        <button type="button" onclick="closeAnmeldungModal()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns">
+          Abbrechen
+        </button>
+        <button type="button" id="step1-next-btn" onclick="goToStep2()" class="modal-btn-submit f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns order-0 order-1-ns" disabled>
+          Weiter →
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 2: Personal Info Form -->
+    <form id="anmeldung-form" action="https://api.web3forms.com/submit" method="POST" style="display:none;">
       <!-- Web3Forms Settings -->
       <input type="hidden" name="access_key" value="de64875b-e858-42ef-bc13-88b73d9ad88b">
       <input type="hidden" name="subject" value="Neue Kurs-Anmeldung - Rauchfrei Dein Weg">
       <input type="hidden" name="from_name" value="Rauchfrei Dein Weg">
+      <input type="hidden" id="selected-course-input" name="Kurs" value="">
       <input type="checkbox" name="botcheck" class="hidden" style="display:none">
 
       <div class="modal-body">
+        <div id="selected-course-display" class="mb3 pa2 bg-washed-green br2 b--green ba f6 dark-green" style="display:none;"></div>
         <div class="mb3">
           <label class="db fw6 mb1 f6" for="vorname">Vorname *</label>
           <input type="text" id="vorname" name="Vorname" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="Ihr Vorname">
@@ -45,7 +68,10 @@
       </div>
 
       <div class="modal-footer flex flex-column flex-row-ns justify-end">
-        <button type="button" onclick="closeAnmeldungModal()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns">
+        <button type="button" id="back-to-step1-btn" onclick="goToStep1()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns" style="display:none;">
+          ← Zurück
+        </button>
+        <button type="button" onclick="closeAnmeldungModal()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns" id="cancel-step2-btn">
           Abbrechen
         </button>
         <button type="submit" id="submit-btn" class="modal-btn-submit f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns order-0 order-1-ns">
@@ -77,10 +103,93 @@
 </div>
 
 <script>
+// Course data injected by Hugo at build time
+var RAUCHFREI_COURSES = {{ with site.Data.courses.courses }}{{ . | jsonify | safeJS }}{{ else }}[]{{ end }};
+
+var selectedCourseId = null;
+var hasCourseStep = false;
+
+function formatGermanDate(isoDate) {
+  if (!isoDate) return '';
+  var parts = isoDate.split('-');
+  if (parts.length !== 3) return isoDate;
+  return parts[2] + '.' + parts[1] + '.' + parts[0];
+}
+
+function buildCourseSelectionUI() {
+  var bookable = RAUCHFREI_COURSES.filter(function(c) { return c.bookable; });
+  hasCourseStep = bookable.length > 0;
+  var list = document.getElementById('course-selection-list');
+  var noMsg = document.getElementById('no-courses-msg');
+  list.innerHTML = '';
+  if (bookable.length === 0) {
+    noMsg.style.display = '';
+    document.getElementById('step1-next-btn').style.display = 'none';
+    return;
+  }
+  noMsg.style.display = 'none';
+  bookable.forEach(function(course) {
+    var card = document.createElement('div');
+    card.className = 'course-card mb2 pa3 br2 ba b--moon-gray pointer';
+    card.setAttribute('data-course-id', course.id);
+    var titleSpan = document.createElement('span');
+    titleSpan.className = 'fw6 f5 dark-green';
+    titleSpan.textContent = course.title || '';
+    var dateSpan = document.createElement('span');
+    dateSpan.className = 'db f6 mid-gray mt1';
+    dateSpan.textContent = '📅 ' + formatGermanDate(course.date);
+    card.appendChild(titleSpan);
+    card.appendChild(dateSpan);
+    card.addEventListener('click', function() {
+      document.querySelectorAll('.course-card').forEach(function(el) {
+        el.classList.remove('course-card--selected');
+        el.style.borderColor = '';
+        el.style.background = '';
+      });
+      card.classList.add('course-card--selected');
+      card.style.borderColor = '#2d7a2d';
+      card.style.background = '#f0faf0';
+      selectedCourseId = course.id;
+      document.getElementById('step1-next-btn').disabled = false;
+    });
+    list.appendChild(card);
+  });
+}
+
 function openAnmeldungModal(e) {
   if (e) e.preventDefault();
+  resetAnmeldungForm();
+  buildCourseSelectionUI();
   document.getElementById('anmeldung-modal').style.display = 'flex';
   document.body.style.overflow = 'hidden';
+  if (hasCourseStep) {
+    document.getElementById('anmeldung-step-1').style.display = '';
+    document.getElementById('anmeldung-form').style.display = 'none';
+  } else {
+    document.getElementById('anmeldung-step-1').style.display = 'none';
+    document.getElementById('anmeldung-form').style.display = '';
+    document.getElementById('back-to-step1-btn').style.display = 'none';
+  }
+}
+
+function goToStep2() {
+  var bookable = RAUCHFREI_COURSES.filter(function(c) { return c.bookable; });
+  var course = bookable.find(function(c) { return c.id === selectedCourseId; });
+  if (course) {
+    document.getElementById('selected-course-input').value = course.title + ' – ' + formatGermanDate(course.date);
+    var display = document.getElementById('selected-course-display');
+    display.textContent = '✓ Ausgewählter Kurs: ' + course.title + ' – ' + formatGermanDate(course.date);
+    display.style.display = '';
+  }
+  document.getElementById('anmeldung-step-1').style.display = 'none';
+  document.getElementById('anmeldung-form').style.display = '';
+  document.getElementById('back-to-step1-btn').style.display = '';
+  document.getElementById('cancel-step2-btn').style.display = 'none';
+}
+
+function goToStep1() {
+  document.getElementById('anmeldung-step-1').style.display = '';
+  document.getElementById('anmeldung-form').style.display = 'none';
 }
 
 function closeAnmeldungModal() {
@@ -90,12 +199,19 @@ function closeAnmeldungModal() {
 }
 
 function resetAnmeldungForm() {
+  selectedCourseId = null;
   document.getElementById('anmeldung-form').reset();
-  document.getElementById('anmeldung-form').style.display = '';
+  document.getElementById('anmeldung-form').style.display = 'none';
+  document.getElementById('anmeldung-step-1').style.display = 'none';
   document.getElementById('form-success').style.display = 'none';
   document.getElementById('form-error').style.display = 'none';
   document.getElementById('submit-btn').disabled = false;
   document.getElementById('submit-btn').textContent = 'Jetzt verbindlich anmelden';
+  document.getElementById('step1-next-btn').disabled = true;
+  document.getElementById('back-to-step1-btn').style.display = 'none';
+  document.getElementById('cancel-step2-btn').style.display = '';
+  document.getElementById('selected-course-display').style.display = 'none';
+  document.getElementById('selected-course-input').value = '';
 }
 
 // Modal only closes via Abbrechen button — no overlay click or Escape key
