@@ -237,16 +237,18 @@ async function doLogin() {
     return;
   }
 
+  // store GitHub token only in memory, not in Web Storage
+  window._githubToken = token;
   sessionStorage.setItem('admin_auth', '1');
   sessionStorage.setItem('admin_user', user);
-  sessionStorage.setItem('github_token', token);
   showDashboard(user);
 }
 
 function doLogout() {
   sessionStorage.removeItem('admin_auth');
   sessionStorage.removeItem('admin_user');
-  sessionStorage.removeItem('github_token');
+  // clear in-memory GitHub token
+  window._githubToken = null;
   document.getElementById('login-pass').value = '';
   document.getElementById('login-token').value = '';
   document.getElementById('dashboard').style.display = 'none';
@@ -343,7 +345,8 @@ function escHtml(str) {
 
 // ── GitHub API save ──────────────────────────────────────────────────────────
 function b64EncodeUnicode(str) {
-  return btoa(unescape(encodeURIComponent(str)));
+  var bytes = new TextEncoder().encode(str);
+  return btoa(Array.from(bytes).map(function(b) { return String.fromCharCode(b); }).join(''));
 }
 
 async function getFileSha(path, token) {
@@ -375,7 +378,7 @@ async function putFile(path, content, message, token) {
 }
 
 async function saveChanges() {
-  var token = sessionStorage.getItem('github_token');
+  var token = window._githubToken;
   if (!token) {
     setStatus('error', 'Kein GitHub Token. Bitte erneut anmelden.');
     return;
@@ -397,20 +400,28 @@ async function saveChanges() {
     // Build courses.json
     var coursesData = { courses: courses };
 
-    await Promise.all([
-      putFile(
+    // Speichere Dateien nacheinander, um Fehler besser handhaben zu können
+    try {
+      await putFile(
         'rauchfrei-deinweg/data/site_content.json',
         JSON.stringify(siteContent, null, 2) + '\n',
         'Admin: Website-Texte aktualisiert',
         token
-      ),
-      putFile(
+      );
+    } catch (e) {
+      throw new Error('Website-Texte konnten nicht gespeichert werden: ' + e.message);
+    }
+
+    try {
+      await putFile(
         'rauchfrei-deinweg/data/courses.json',
         JSON.stringify(coursesData, null, 2) + '\n',
         'Admin: Kurse aktualisiert',
         token
-      )
-    ]);
+      );
+    } catch (e) {
+      throw new Error('Kurse konnten nicht gespeichert werden. Website-Texte wurden bereits aktualisiert: ' + e.message);
+    }
 
     setStatus('success', '✓ Gespeichert! GitHub Actions baut die Website neu (ca. 1–2 Min.).');
   } catch (e) {

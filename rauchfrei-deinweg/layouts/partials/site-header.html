@@ -17,7 +17,7 @@
             </h2>
           {{ end }}
           <!-- Urgency Banner - Only on HomePage -->
-          {{ if not .IsSection }}
+          {{ if .IsHome }}
             {{- $urgencyText := site.Data.site_content.hero.urgency_text | default "Nächster Kurs bald" -}}
             {{- $urgencySubtext := site.Data.site_content.hero.urgency_subtext | default "Jetzt anmelden!" -}}
             <div class="hero-urgency-banner dib mt3 mb4">

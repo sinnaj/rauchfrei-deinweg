@@ -132,9 +132,14 @@ function buildCourseSelectionUI() {
     var card = document.createElement('div');
     card.className = 'course-card mb2 pa3 br2 ba b--moon-gray pointer';
     card.setAttribute('data-course-id', course.id);
-    card.innerHTML =
-      '<span class="fw6 f5 dark-green">' + course.title + '</span>' +
-      '<span class="db f6 mid-gray mt1">📅 ' + formatGermanDate(course.date) + '</span>';
+    var titleSpan = document.createElement('span');
+    titleSpan.className = 'fw6 f5 dark-green';
+    titleSpan.textContent = course.title || '';
+    var dateSpan = document.createElement('span');
+    dateSpan.className = 'db f6 mid-gray mt1';
+    dateSpan.textContent = '📅 ' + formatGermanDate(course.date);
+    card.appendChild(titleSpan);
+    card.appendChild(dateSpan);
     card.addEventListener('click', function() {
       document.querySelectorAll('.course-card').forEach(function(el) {
         el.classList.remove('course-card--selected');
