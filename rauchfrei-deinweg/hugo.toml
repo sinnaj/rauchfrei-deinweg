@@ -1,4 +1,4 @@
-baseURL = '/rauchfrei-deinweg/'
+baseURL = 'https://rauchfrei-deinweg.de/'
 languageCode = 'de-de'
 title = 'Rauchfrei - Dein Weg'
 theme = 'ananke'

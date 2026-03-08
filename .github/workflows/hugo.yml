@@ -54,7 +54,7 @@ jobs:
         run: |
           echo "HUGO_PARAMS_ADMINUSERNAME length: ${#HUGO_PARAMS_ADMINUSERNAME}"
           echo "HUGO_PARAMS_ADMINPASSWORDHASH length: ${#HUGO_PARAMS_ADMINPASSWORDHASH}"
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
