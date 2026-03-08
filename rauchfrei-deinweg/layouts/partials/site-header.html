@@ -26,7 +26,7 @@
               <span class="db f5 f4-l fw7 white">{{ $urgencyText }}</span>
               <span class="db f6 f5-l fw5 gold mt1">{{ $urgencySubtext }}</span>
               {{ with $urgencyAddress }}
-                <span class="db f7 f6-l fw4 white-70 mt2">📍 {{ . }}</span>
+                <a href="https://www.google.com/maps/search/?api=1&query={{ replace . " " "+" }}" target="_blank" rel="noopener noreferrer" class="db f7 f6-l fw4 white-70 mt2 link underline-hover white-70">📍 {{ . }}</a>
               {{ end }}
               {{ with $urgencyCost }}
                 <span class="db f7 f6-l fw4 white-70 mt1">Kurskosten: {{ . }}</span>
