@@ -116,6 +116,14 @@ function formatGermanDate(isoDate) {
   return parts[2] + '.' + parts[1] + '.' + parts[0];
 }
 
+function formatTimeRange(startTime, endTime) {
+  if (!startTime && !endTime) return '';
+  var parts = [];
+  if (startTime) parts.push(startTime + ' Uhr');
+  if (endTime) parts.push(endTime + ' Uhr');
+  return parts.join(' – ') + ' (MEZ)';
+}
+
 function buildCourseSelectionUI() {
   var bookable = RAUCHFREI_COURSES.filter(function(c) { return c.bookable; });
   hasCourseStep = bookable.length > 0;
@@ -140,6 +148,13 @@ function buildCourseSelectionUI() {
     dateSpan.textContent = '📅 ' + formatGermanDate(course.date);
     card.appendChild(titleSpan);
     card.appendChild(dateSpan);
+    var timeStr = formatTimeRange(course.start_time, course.end_time);
+    if (timeStr) {
+      var timeSpan = document.createElement('span');
+      timeSpan.className = 'db f6 mid-gray mt1';
+      timeSpan.textContent = '⏰ ' + timeStr;
+      card.appendChild(timeSpan);
+    }
     card.addEventListener('click', function() {
       document.querySelectorAll('.course-card').forEach(function(el) {
         el.classList.remove('course-card--selected');
@@ -176,9 +191,12 @@ function goToStep2() {
   var bookable = RAUCHFREI_COURSES.filter(function(c) { return c.bookable; });
   var course = bookable.find(function(c) { return c.id === selectedCourseId; });
   if (course) {
-    document.getElementById('selected-course-input').value = course.title + ' – ' + formatGermanDate(course.date);
+    var courseInfo = course.title + ' – ' + formatGermanDate(course.date);
+    var timeStr = formatTimeRange(course.start_time, course.end_time);
+    if (timeStr) courseInfo += ' – ' + timeStr;
+    document.getElementById('selected-course-input').value = courseInfo;
     var display = document.getElementById('selected-course-display');
-    display.textContent = '✓ Ausgewählter Kurs: ' + course.title + ' – ' + formatGermanDate(course.date);
+    display.textContent = '✓ Ausgewählter Kurs: ' + courseInfo;
     display.style.display = '';
   }
   document.getElementById('anmeldung-step-1').style.display = 'none';
