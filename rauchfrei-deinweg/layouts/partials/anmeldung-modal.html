@@ -80,6 +80,31 @@
       </div>
     </form>
 
+    <!-- Step 3: AGB Confirmation -->
+    <div id="anmeldung-step-agb" style="display:none;">
+      <div class="modal-body">
+        <h3 class="f4 fw7 dark-red mb3 tc">⚠ Achtung – diese Anmeldung ist verbindlich!</h3>
+        <div class="pa3 bg-washed-yellow br2 ba b--gold mb3">
+          <p class="f5 fw6 dark-gray mb3">Die Kosten für den Kurs belaufen sich auf 226 €!</p>
+        </div>
+        <div id="agb-course-display" class="mb3 pa2 bg-washed-green br2 b--green ba f6 dark-green" style="display:none;"></div>
+        <h4 class="f5 fw7 dark-gray mb2">Bitte beachten Sie die AGB</h4>
+        <div class="pa3 bg-near-white br2 ba b--moon-gray mb3" style="max-height: 250px; overflow-y: auto;">
+          <p class="f6 lh-copy dark-gray mb2">Für die Kurse gilt: Eine Anmeldung oder Stornierung kann nur schriftlich erfolgen. Falls es zu einer Überbuchung gekommen ist, erfolgt die Platzvergabe in der Reihenfolge des Eingangs der Kursgebühr. Bitte beachten Sie, eine nicht bezahlte Kursgebühr ist keine Stornierung. Die Seminargebühr ist in voller Höhe mindestens 2 Wochen vor Beginn der Veranstaltung zu überweisen. Bei kurzfristiger Absage, d.&nbsp;h. ab 14 Tagen vor Kursbeginn, ist die volle Kursgebühr zu entrichten, sofern kein(e) Ersatzteilnehmer(in) gestellt wird.</p>
+          <p class="f6 lh-copy dark-gray mb2">Die Kursanmeldung kann innerhalb einer Woche nach Anmeldung kostenlos schriftlich storniert werden. Ausnahme ist, wenn die Anmeldung erst 14 Tage vor Kursbeginn erfolgt ist. Die Veranstalterin behält sich vor, Kurse nicht stattfinden zu lassen, wenn nicht genügend Anmeldungen erfolgt sind. Die bereits gezahlten Kursgebühren werden dann selbstverständlich erstattet.</p>
+          <p class="f6 lh-copy dark-gray mb0">Bei vorzeitigem Abbruch eines laufenden Kurses, besteht kein Anspruch auf die Erstattung der anteiligen Seminargebühren. Der Teilnehmerin, dem Teilnehmer ist bekannt, dass die Teilnahme an den Kursen der eigenen Verantwortlichkeit unterliegt. Bei den Kursen handelt es sich um Präventionsangebote, die keine Therapie ersetzen können. Die Teilnahme an den Gruppen erfolgt auf eigene Verantwortung.</p>
+        </div>
+      </div>
+      <div class="modal-footer flex flex-column flex-row-ns justify-end">
+        <button type="button" onclick="declineAgb()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns">
+          ← Zurück
+        </button>
+        <button type="button" onclick="acceptAgb()" class="modal-btn-submit f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns order-0 order-1-ns">
+          Ich akzeptiere die AGB – Verbindlich anmelden
+        </button>
+      </div>
+    </div>
+
     <!-- Success Message -->
     <div id="form-success" style="display:none;" class="modal-body tc pv4">
       <div class="f2 mb3">✓</div>
@@ -223,6 +248,7 @@ function resetAnmeldungForm() {
   document.getElementById('anmeldung-step-1').style.display = 'none';
   document.getElementById('form-success').style.display = 'none';
   document.getElementById('form-error').style.display = 'none';
+  document.getElementById('anmeldung-step-agb').style.display = 'none';
   document.getElementById('submit-btn').disabled = false;
   document.getElementById('submit-btn').textContent = 'Jetzt verbindlich anmelden';
   document.getElementById('step1-next-btn').disabled = true;
@@ -234,18 +260,43 @@ function resetAnmeldungForm() {
 
 // Modal only closes via Abbrechen button — no overlay click or Escape key
 
-// Form submission via AJAX
+// Form submission — intercept to show AGB step first
 document.getElementById('anmeldung-form').addEventListener('submit', function(e) {
   e.preventDefault();
+  // Validate form first
+  if (!this.checkValidity()) {
+    this.reportValidity();
+    return;
+  }
+  // Show AGB confirmation step
+  document.getElementById('anmeldung-form').style.display = 'none';
+  var agbStep = document.getElementById('anmeldung-step-agb');
+  // Show selected course in AGB step
+  var courseVal = document.getElementById('selected-course-input').value;
+  var agbCourseDisplay = document.getElementById('agb-course-display');
+  if (courseVal) {
+    agbCourseDisplay.textContent = '✓ Ausgewählter Kurs: ' + courseVal;
+    agbCourseDisplay.style.display = '';
+  } else {
+    agbCourseDisplay.style.display = 'none';
+  }
+  agbStep.style.display = '';
+});
+
+function acceptAgb() {
+  document.getElementById('anmeldung-step-agb').style.display = 'none';
   var btn = document.getElementById('submit-btn');
   btn.disabled = true;
   btn.textContent = 'Wird gesendet...';
 
-  var formData = new FormData(this);
+  var form = document.getElementById('anmeldung-form');
+  var formData = new FormData(form);
   var jsonData = {};
   formData.forEach(function(value, key) { jsonData[key] = value; });
+  // Add AGB acceptance note
+  jsonData['AGB_akzeptiert'] = 'Ja';
 
-  fetch(this.action, {
+  fetch(form.action, {
     method: 'POST',
     body: JSON.stringify(jsonData),
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
@@ -253,17 +304,20 @@ document.getElementById('anmeldung-form').addEventListener('submit', function(e)
   .then(function(response) { return response.json(); })
   .then(function(data) {
     if (data.success) {
-      document.getElementById('anmeldung-form').style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
     } else {
       throw new Error(data.message || 'Server error');
     }
   })
   .catch(function() {
-    document.getElementById('anmeldung-form').style.display = 'none';
     document.getElementById('form-error').style.display = 'block';
   });
-});
+}
+
+function declineAgb() {
+  document.getElementById('anmeldung-step-agb').style.display = 'none';
+  document.getElementById('anmeldung-form').style.display = '';
+}
 
 // Attach click handlers to all CTA links pointing to /anmeldung
 document.addEventListener('DOMContentLoaded', function() {
