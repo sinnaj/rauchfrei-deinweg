@@ -41,12 +41,19 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Debug secrets availability
+        run: |
+          if [ -n "${{ secrets.ADMIN_USERNAME }}" ]; then echo "✓ ADMIN_USERNAME is set"; else echo "✗ ADMIN_USERNAME is EMPTY"; fi
+          if [ -n "${{ secrets.ADMIN_PASSWORD_HASH }}" ]; then echo "✓ ADMIN_PASSWORD_HASH is set"; else echo "✗ ADMIN_PASSWORD_HASH is EMPTY"; fi
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
           HUGO_PARAMS_ADMINUSERNAME: ${{ secrets.ADMIN_USERNAME }}
           HUGO_PARAMS_ADMINPASSWORDHASH: ${{ secrets.ADMIN_PASSWORD_HASH }}
         run: |
+          echo "HUGO_PARAMS_ADMINUSERNAME length: ${#HUGO_PARAMS_ADMINUSERNAME}"
+          echo "HUGO_PARAMS_ADMINPASSWORDHASH length: ${#HUGO_PARAMS_ADMINPASSWORDHASH}"
           hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
