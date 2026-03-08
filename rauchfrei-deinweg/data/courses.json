@@ -4,12 +4,18 @@
       "bookable": true,
       "date": "2026-04-11",
       "id": "course-1772978328471",
-      "title": "Rauchfrei Tageskurs"
+      "title": "Rauchfrei Tageskurs // April"
     },
     {
       "id": "course-1772995813488",
-      "title": "Rauchfrei Tageskurs",
+      "title": "Rauchfrei Tageskurs // Mai",
       "date": "2026-05-23",
+      "bookable": true
+    },
+    {
+      "id": "course-1772995855160",
+      "title": "Rauchfrei Tageskurs // Juni",
+      "date": "2026-06-20",
       "bookable": true
     }
   ]
