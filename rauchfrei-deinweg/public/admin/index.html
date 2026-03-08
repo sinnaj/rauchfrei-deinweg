@@ -52,6 +52,7 @@
     .form-row label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .3rem; color: #555; }
     .form-row input[type="text"],
     .form-row input[type="date"],
+    .form-row input[type="time"],
     .form-row textarea { width: 100%; border: 1px solid #ccc; border-radius: 6px; padding: .55rem .8rem; font-size: .9rem; font-family: inherit; transition: border .15s; outline: none; }
     .form-row input:focus,
     .form-row textarea:focus { border-color: #2d7a2d; box-shadow: 0 0 0 3px rgba(45,122,45,.12); }
@@ -194,8 +195,8 @@
 var ADMIN_USERNAME     = "";
 var ADMIN_PASS_HASH    = "";
 var GITHUB_REPO        = "sinnaj/rauchfrei-deinweg";
-var INITIAL_COURSES    = [{"bookable":true,"date":"2026-03-26","id":"course-1","title":"Kurs März/April 2026"}];
-var INITIAL_SITE_CONTENT = {"hero":{"urgency_subtext":"Nur noch begrenzt Plätze!","urgency_text":"Nächster Kurs 26.03.26"}};
+var INITIAL_COURSES    = [{"bookable":true,"date":"2026-04-11","end_time":"21:30","id":"course-1772978328471","location":"Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel","start_time":"15:30","title":"Rauchfrei Tageskurs // April"},{"bookable":true,"date":"2026-05-23","end_time":"21:30","id":"course-1772995813488","location":"Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel","start_time":"15:30","title":"Rauchfrei Tageskurs // Mai"},{"bookable":true,"date":"2026-06-20","end_time":"21:30","id":"course-1772995855160","location":"Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel","start_time":"15:30","title":"Rauchfrei Tageskurs // Juni"}];
+var INITIAL_SITE_CONTENT = {"hero":{"urgency_address":"Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel","urgency_cost":"226€","urgency_subtext":"Nur noch begrenzt Plätze!","urgency_text":"Nächster Kurs 11.04.26"}};
 
 
 var courses = [];
@@ -216,7 +217,7 @@ async function doLogin() {
   
   if (!ADMIN_USERNAME || !ADMIN_PASS_HASH) {
     err.textContent = 'Admin-Zugangsdaten sind noch nicht konfiguriert. Bitte GitHub Secrets setzen (siehe Hilfe & Info).';
-    err.style.display = '';
+    err.style.display = 'block';
     return;
   }
 
@@ -227,7 +228,7 @@ async function doLogin() {
   var hash = await sha256hex(pass);
   if (user !== ADMIN_USERNAME || hash !== ADMIN_PASS_HASH) {
     err.textContent = 'Benutzername oder Passwort falsch.';
-    err.style.display = '';
+    err.style.display = 'block';
     btn.disabled = false;
     btn.textContent = 'Anmelden';
     return;
@@ -314,6 +315,24 @@ function renderCourses() {
             'oninput="courses[' + idx + '].date=this.value">' +
         '</div>' +
       '</div>' +
+      '<div class="course-row" style="margin-top:.75rem;">' +
+        '<div class="form-row">' +
+          '<label>Startzeit (MEZ)</label>' +
+          '<input type="time" value="' + escHtml(course.start_time || '') + '" ' +
+            'oninput="courses[' + idx + '].start_time=this.value">' +
+        '</div>' +
+        '<div class="form-row">' +
+          '<label>Endzeit (MEZ)</label>' +
+          '<input type="time" value="' + escHtml(course.end_time || '') + '" ' +
+            'oninput="courses[' + idx + '].end_time=this.value">' +
+        '</div>' +
+      '</div>' +
+      '<div class="form-row" style="margin-top:.75rem;">' +
+        '<label>Ort / Adresse</label>' +
+        '<input type="text" value="' + escHtml(course.location || '') + '" ' +
+          'oninput="courses[' + idx + '].location=this.value" ' +
+          'placeholder="z.B. Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg">' +
+      '</div>' +
       '<div class="checkbox-row">' +
         '<input type="checkbox" id="bookable-' + idx + '" ' + (course.bookable ? 'checked' : '') + ' ' +
           'onchange="courses[' + idx + '].bookable=this.checked">' +
@@ -326,7 +345,7 @@ function renderCourses() {
 
 function addCourse() {
   if (courses.length >= 3) return;
-  courses.push({ id: 'course-' + Date.now(), title: '', date: '', bookable: false });
+  courses.push({ id: 'course-' + Date.now(), title: '', date: '', start_time: '', end_time: '', location: 'Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel', bookable: false });
   renderCourses();
 }
 

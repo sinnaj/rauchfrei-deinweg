@@ -331,6 +331,12 @@ function renderCourses() {
             'oninput="courses[' + idx + '].end_time=this.value">' +
         '</div>' +
       '</div>' +
+      '<div class="form-row" style="margin-top:.75rem;">' +
+        '<label>Ort / Adresse</label>' +
+        '<input type="text" value="' + escHtml(course.location || '') + '" ' +
+          'oninput="courses[' + idx + '].location=this.value" ' +
+          'placeholder="z.B. Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg">' +
+      '</div>' +
       '<div class="checkbox-row">' +
         '<input type="checkbox" id="bookable-' + idx + '" ' + (course.bookable ? 'checked' : '') + ' ' +
           'onchange="courses[' + idx + '].bookable=this.checked">' +
@@ -343,7 +349,7 @@ function renderCourses() {
 
 function addCourse() {
   if (courses.length >= 3) return;
-  courses.push({ id: 'course-' + Date.now(), title: '', date: '', start_time: '', end_time: '', bookable: false });
+  courses.push({ id: 'course-' + Date.now(), title: '', date: '', start_time: '', end_time: '', location: 'Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel', bookable: false });
   renderCourses();
 }
 

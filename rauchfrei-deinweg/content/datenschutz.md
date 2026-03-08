@@ -10,11 +10,16 @@ build:
 
 Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:
 
-**Christiane Meik**
+**Dipl.-Päd. Christiane Meik**  
+Barenbleek 10  
+22179 Hamburg
+
+Tel.: 040/43 26 54 81  
+Email: info@meik-gesundheit.de
 
 ### Ihre Betroffenenrechte
 
-Unter den angegebenen Kontaktdaten meines Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:
+Unter den oben angegebenen Kontaktdaten können Sie jederzeit folgende Rechte ausüben:
 
 - Auskunft über Ihre bei mir gespeicherten Daten und deren Verarbeitung,
 - Berichtigung unrichtiger personenbezogener Daten,
@@ -40,40 +45,45 @@ Ich verarbeite Ihre personenbezogenen Daten nur zu den in dieser Datenschutzerkl
 
 Ich halte mich an die Grundsätze der Datenvermeidung und Datensparsamkeit. Ich speichere Ihre personenbezogenen Daten daher nur so lange, wie dies zur Erreichung der hier genannten Zwecke erforderlich ist oder wie es die vom Gesetzgeber vorgesehenen vielfältigen Speicherfristen vorsehen. Nach Fortfall des jeweiligen Zweckes bzw. Ablauf dieser Fristen werden die entsprechenden Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht.
 
+### Hosting (GitHub Pages)
+
+Diese Website wird über **GitHub Pages** gehostet, einen Dienst der GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA. Beim Aufruf dieser Website werden vom Hosting-Anbieter automatisch Informationen erfasst (sog. Server-Logfiles), die Ihr Browser übermittelt. Hierzu gehören u. a. Ihre IP-Adresse, Datum und Uhrzeit des Zugriffs, übertragene Datenmenge und der anfragende Provider. Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren Bereitstellung der Website). Die Datenübertragung in die USA wird auf Grundlage des EU-US Data Privacy Framework gestützt. Weitere Informationen finden Sie in der Datenschutzerklärung von GitHub unter: [https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement).
+
 ### SSL-Verschlüsselung
 
 Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwende ich dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.
 
-### Kontaktformular
+### Kontaktformular / Anmeldeformular (Web3Forms)
 
-Treten Sie bzgl. Fragen jeglicher Art per E-Mail oder Kontaktformular mit mir in Kontakt, erteilen Sie mir zum Zwecke der Kontaktaufnahme Ihre freiwillige Einwilligung. Hierfür ist die Angabe einer validen E-Mail-Adresse erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional. Die von Ihnen gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten Anfrage werden personenbezogene Daten automatisch gelöscht.
+Treten Sie per E-Mail oder über das Anmeldeformular auf dieser Website mit mir in Kontakt, erteilen Sie mir zum Zwecke der Kontaktaufnahme Ihre freiwillige Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Hierfür ist die Angabe einer validen E-Mail-Adresse erforderlich. Die Angabe weiterer Daten ist optional.
 
-### Verwendung von Google Analytics
+Zur Verarbeitung der Formulardaten nutze ich den Dienst **Web3Forms** (Web3Forms, [https://web3forms.com](https://web3forms.com)). Alle in das Formular eingegebenen Daten werden SSL-verschlüsselt über HTTPS an die Web3Forms-API übertragen und von dort direkt als E-Mail an mich weitergeleitet. Web3Forms fungiert hierbei als Auftragsverarbeiter im Sinne von Art. 28 DSGVO. Web3Forms speichert Ihre Daten nicht dauerhaft auf seinen Servern. Weitere Informationen zum Datenschutz von Web3Forms finden Sie unter: [https://web3forms.com/privacy](https://web3forms.com/privacy).
 
-Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (folgend: Google). Google Analytics verwendet sog. „Cookies", also Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Aufgrund der Aktivierung der IP-Anonymisierung auf diesen Webseiten, wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Webseite auszuwerten, um Reports über die Webseitenaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Webseitenbetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.
+Die von Ihnen gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten Anfrage werden personenbezogene Daten gelöscht.
 
-Die Zwecke der Datenverarbeitung liegen in der Auswertung der Nutzung der Website und in der Zusammenstellung von Reports über Aktivitäten auf der Website. Auf Grundlage der Nutzung der Website und des Internets sollen dann weitere verbundene Dienstleistungen erbracht werden. Die Verarbeitung beruht auf dem berechtigten Interesse des Webseitenbetreibers.
+### Verwendung von Google Analytics 4
 
-Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; ich weise Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Webseite bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: [Browser Add On zur Deaktivierung von Google Analytics](https://tools.google.com/dlpage/gaoptout?hl=de).
+Diese Website benutzt Google Analytics 4, einen Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (folgend: „Google"). Google Analytics 4 verwendet Technologien, die die seitenübergreifende Wiedererkennung des Nutzers zur Analyse des Nutzerverhaltens ermöglichen (z. B. Cookies oder Device-Fingerprinting). Die durch Google Analytics erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google übertragen und dort gespeichert. Google Analytics 4 anonymisiert IP-Adressen standardmäßig, sodass eine Zuordnung der gekürzten IP-Adresse zum aufrufenden Rechner nicht möglich ist.
 
-Zusätzlich oder als Alternative zum Browser-Add-On können Sie das Tracking durch Google Analytics auf meinen Seiten unterbinden, indem Sie einen Opt-Out-Cookie installieren. Damit wird die Erfassung durch Google Analytics für diese Website und für diesen Browser zukünftig verhindert, so lange das Cookie in Ihrem Browser installiert bleibt.
+Die Nutzung dieses Dienstes erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.
 
-### Verwendung von Google Maps
+Die Datenübertragung in die USA wird auf Grundlage des EU-US Data Privacy Framework gestützt. Details finden Sie unter: [https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_en](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_en).
 
-Diese Webseite verwendet Google Maps API, um geographische Informationen visuell darzustellen. Bei der Nutzung von Google Maps werden von Google auch Daten über die Nutzung der Kartenfunktionen durch Besucher erhoben, verarbeitet und genutzt. Nähere Informationen über die Datenverarbeitung durch Google können Sie den [Google-Datenschutzhinweisen](https://policies.google.com/privacy) entnehmen. Dort können Sie im Datenschutzcenter auch Ihre persönlichen Datenschutz-Einstellungen verändern.
+Sie können die Erfassung Ihrer Daten durch Google Analytics verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: [Browser Add On zur Deaktivierung von Google Analytics](https://tools.google.com/dlpage/gaoptout?hl=de).
 
-Ausführliche Anleitungen zur Verwaltung der eigenen Daten im Zusammenhang mit Google-Produkten finden Sie [hier](https://support.google.com/accounts/answer/3024190).
+Weitere Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der Datenschutzerklärung von Google: [https://policies.google.com/privacy](https://policies.google.com/privacy).
 
 ### Änderung meiner Datenschutzbestimmungen
 
 Ich behalte mir vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen meiner Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
 
-### Fragen an den Datenschutzbeauftragten
+### Fragen zum Datenschutz
 
-Wenn Sie Fragen zum Datenschutz haben, schreiben Sie mir bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person:
+Wenn Sie Fragen zum Datenschutz haben, schreiben Sie mir bitte eine E-Mail oder wenden Sie sich direkt an mich:
 
-**Christiane Meik**  
+**Dipl.-Päd. Christiane Meik**  
 Barenbleek 10  
-22179 Hamburg
+22179 Hamburg  
+Email: info@meik-gesundheit.de
 
 *Die Datenschutzerklärung wurde mit dem Datenschutzerklärungs-Generator der activeMind AG erstellt.*

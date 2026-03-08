@@ -3,6 +3,11 @@ languageCode = 'de-de'
 title = 'Rauchfrei - Dein Weg'
 theme = 'ananke'
 
+# Google Analytics 4 – replace G-XXXXXXXXXX with your actual Measurement ID
+[services]
+  [services.googleAnalytics]
+    ID = 'G-XXXXXXXXXX'
+
 [params]
   description = "Dein Weg in ein rauchfreies Leben"
   featured_image = ""
