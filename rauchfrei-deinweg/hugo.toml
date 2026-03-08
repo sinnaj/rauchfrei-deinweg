@@ -7,6 +7,12 @@ theme = 'ananke'
   description = "Dein Weg in ein rauchfreies Leben"
   featured_image = ""
   custom_css = ["custom.css"]
+  # Admin credentials – override via GitHub Secrets:
+  # HUGO_PARAMS_ADMINUSERNAME and HUGO_PARAMS_ADMINPASSWORDHASH (SHA-256 hex of password)
+  adminusername = ""
+  adminpasswordhash = ""
+  # GitHub repository info for admin save functionality
+  githubrepo = "sinnaj/rauchfrei-deinweg"
 
 [markup]
   [markup.goldmark]
