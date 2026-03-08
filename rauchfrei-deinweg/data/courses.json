@@ -5,6 +5,12 @@
       "date": "2026-04-11",
       "id": "course-1772978328471",
       "title": "Rauchfrei Tageskurs"
+    },
+    {
+      "id": "course-1772995813488",
+      "title": "Rauchfrei Tageskurs",
+      "date": "2026-05-23",
+      "bookable": true
     }
   ]
 }
