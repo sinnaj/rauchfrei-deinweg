@@ -21,11 +21,15 @@
             {{- $urgencyText := site.Data.site_content.hero.urgency_text | default "Nächster Kurs bald" -}}
             {{- $urgencySubtext := site.Data.site_content.hero.urgency_subtext | default "Jetzt anmelden!" -}}
             {{- $urgencyAddress := site.Data.site_content.hero.urgency_address -}}
+            {{- $urgencyCost := site.Data.site_content.hero.urgency_cost -}}
             <div class="hero-urgency-banner dib mt3 mb3">
               <span class="db f5 f4-l fw7 white">{{ $urgencyText }}</span>
               <span class="db f6 f5-l fw5 gold mt1">{{ $urgencySubtext }}</span>
               {{ with $urgencyAddress }}
-                <span class="db f7 f6-l fw4 white-70 mt2">{{ . }}</span>
+                <span class="db f7 f6-l fw4 white-70 mt2">\ud83d\udccd {{ . }}</span>
+              {{ end }}
+              {{ with $urgencyCost }}
+                <span class="db f7 f6-l fw4 white-70 mt1">Kurskosten: {{ . }}</span>
               {{ end }}
             </div>
             <div class="hero-krankenkasse-info db mb4">
