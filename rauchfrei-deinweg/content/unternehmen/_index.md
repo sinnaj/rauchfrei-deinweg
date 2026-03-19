@@ -41,9 +41,9 @@ Ein Nichtraucherkurs nach dem **Rauchfrei-Programm vom IFT** – eine Raucherent
 **Dipl.-Päd. Christiane Meik** – Heilpraktikerin für Psychotherapie, Mental-Coach, zertifizierte Trainerin und **Ex-Raucherin**
 
 Von 2003 bis 2025 war sie in eigener Privatpraxis als Heilpraktikerin für Psychotherapie tätig. **Ab 2026** spezialisiert sie sich auf:
-- Psychologisch fundiertes Mental-Coaching
+- [Psychologisch fundiertes Mental-Coaching](https://meik-gesundheitspraevention.de/coaching.html)
 - Nichtraucherprogramme für Gruppen und Unternehmen
-- Stressmanagement und Burnout-Prävention
+- [Stressmanagement und Burnout-Prävention](https://meik-gesundheitspraevention.de/stressbewaeltigung.html)
 - Online und In-Person Trainings
 
 Ihre persönliche Erfahrung als Ex-Raucherin kombiniert mit langjähriger therapeutischer Expertise macht sie zum idealen Coach für Ihre Mitarbeiter.
