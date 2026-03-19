@@ -1,0 +1,129 @@
+{{/* Keywords meta tag – populated from page front matter or site default */}}
+{{ $keywords := .Params.keywords | default "Rauchen aufhören, Nichtraucherkurse, Raucherentwöhnung, Nichtraucherseminare, rauchfrei werden Hamburg" }}
+<meta name="keywords" content="{{ $keywords }}">
+
+{{/* ─── JSON-LD Structured Data ─────────────────────────────────────────────── */}}
+
+{{/* LocalBusiness schema – helps Google surface the trainer as a local service */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Rauchfrei Dein Weg – Nichtraucherkurse mit Christiane Meik",
+  "url": "https://rauchfrei-deinweg.de/",
+  "description": "Zertifizierte Raucherentwöhnung mit Nichtraucherkursen und Nichtraucherseminaren für Einzelpersonen und Unternehmen in Hamburg.",
+  "image": "https://rauchfrei-deinweg.de/images/fruehling_breath2.jpeg",
+  "telephone": "",
+  "email": "info@meik-gesundheit.de",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hamburg",
+    "addressRegion": "Hamburg",
+    "addressCountry": "DE"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Hamburg"
+  },
+  "priceRange": "€€",
+  "founder": {
+    "@type": "Person",
+    "name": "Christiane Meik",
+    "jobTitle": "Heilpraktikerin für Psychotherapie, Mental-Coach, zertifizierte Trainerin",
+    "description": "Dipl.-Päd. Christiane Meik – zertifizierte Trainerin für Raucherentwöhnung nach dem Rauchfrei-Programm des IFT, Heilpraktikerin für Psychotherapie und Mental-Coach.",
+    "url": "https://meik-gesundheitspraevention.de/"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Nichtraucherkurse & Raucherentwöhnung",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Nichtraucherkurs – Rauchen aufhören mit dem Rauchfrei-Programm",
+          "description": "Zertifizierter Nichtraucherkurs nach dem Rauchfrei-Programm des IFT. Raucherentwöhnung für Gruppen mit hoher Erfolgsquote.",
+          "provider": {
+            "@type": "Person",
+            "name": "Christiane Meik"
+          },
+          "hasCourseInstance": [
+            {
+              "@type": "CourseInstance",
+              "courseMode": ["onsite", "online"],
+              "inLanguage": "de",
+              "courseWorkload": "PT14H"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Nichtraucherseminar für Unternehmen",
+          "description": "Firmenseminare zur Raucherentwöhnung für Mitarbeiter – Tagesseminar oder Vierwochenprogramm. Betriebliche Gesundheitsförderung nach § 20 SGB V.",
+          "provider": {
+            "@type": "Person",
+            "name": "Christiane Meik"
+          },
+          "hasCourseInstance": [
+            {
+              "@type": "CourseInstance",
+              "courseMode": "onsite",
+              "inLanguage": "de"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "sameAs": [
+    "https://meik-gesundheitspraevention.de/"
+  ]
+}
+</script>
+
+{{/* FAQ schema – only inject on the homepage */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie kann ich mit dem Rauchen aufhören?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mit einem professionell begleiteten Nichtraucherkurs nach dem bewährten Rauchfrei-Programm des IFT haben Sie die besten Chancen, dauerhaft rauchfrei zu werden. Christiane Meik bietet zertifizierte Kurse für Einzelpersonen und Unternehmen in Hamburg an."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist ein Nichtraucherkurs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein Nichtraucherkurs ist ein strukturiertes Gruppenprogramm zur Raucherentwöhnung. Das Rauchfrei-Programm des IFT kombiniert Verhaltensstrategien, Motivationsarbeit und gegenseitige Unterstützung, um dauerhaft rauchfrei zu werden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werden Nichtraucherkurse von der Krankenkasse bezuschusst?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Die Nichtraucherseminare des Rauchfrei-Programms wurden nach § 20 Abs. 1 SGB V als förderungswürdig anerkannt und zertifiziert. Viele gesetzliche Krankenkassen bezuschussen die Teilnahme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieten Sie auch Nichtraucherseminare für Unternehmen an?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Christiane Meik bietet maßgeschneiderte Nichtraucherseminare als Firmenseminar an – als Tagesseminar (8 Unterrichtsstunden) oder als Vierwochenprogramm (14 Unterrichtsstunden). Optimal für 8–15 Teilnehmer."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}

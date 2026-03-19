@@ -1,6 +1,6 @@
 baseURL = 'https://rauchfrei-deinweg.de/'
 languageCode = 'de-de'
-title = 'Rauchfrei - Dein Weg'
+title = 'Rauchfrei Dein Weg | Nichtraucherkurse & Raucherentwöhnung Hamburg'
 theme = 'ananke'
 
 # Google Analytics 4 – replace G-XXXXXXXXXX with your actual Measurement ID
@@ -9,7 +9,7 @@ theme = 'ananke'
     ID = 'G-XXXXXXXXXX'
 
 [params]
-  description = "Dein Weg in ein rauchfreies Leben"
+  description = "Rauchen aufhören mit professionellen Nichtraucherkursen und Nichtraucherseminaren. Zertifizierte Raucherentwöhnung in Hamburg mit Dipl.-Päd. Christiane Meik."
   featured_image = ""
   custom_css = ["custom.css"]
   # Admin credentials – override via GitHub Secrets:

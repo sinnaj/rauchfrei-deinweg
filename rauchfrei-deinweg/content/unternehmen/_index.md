@@ -1,8 +1,9 @@
 ---
-title: "Nichtraucherprogramme für Unternehmen"
+title: "Nichtraucherseminare für Unternehmen | Raucherentwöhnung für Mitarbeiter"
 date: 2026-02-28T10:00:00+01:00
 draft: false
-description: "Professionelle Nichtraucherprogramme für Ihre Mitarbeiter. Maßgeschneiderte Seminare mit hoher Erfolgsquote."
+description: "Professionelle Nichtraucherseminare und Raucherentwöhnungsprogramme für Unternehmen. Maßgeschneiderte Firmenseminare nach dem zertifizierten Rauchfrei-Programm – mit hoher Erfolgsquote."
+keywords: "Nichtraucherseminare, Raucherentwöhnung Unternehmen, Nichtraucherkurse Firmen, Rauchstopp Firmenseminar, betriebliche Gesundheitsförderung"
 featured_image: "/images/fruehling_breath2.jpeg"
 cta_text: "JETZT ANFRAGEN!"
 cta_link: "mailto:info@meik-gesundheit.de?subject=Firmenseminar%20Nichtraucherprogramm%20Anfrage"
@@ -11,7 +12,7 @@ tags: ["Unternehmen", "Wellness", "Gesundheitsförderung"]
 
 <p style="text-align: center; font-style: italic;">Die Nichtraucherseminare des Rauchfrei-Programms wurden nach § 20 Abs. 1 SGB V als förderungswürdig anerkannt und zertifiziert.</p>
 
-# Firmenseminare zur Raucherentwöhnung
+# Nichtraucherseminare für Unternehmen – Raucherentwöhnung für Ihre Mitarbeiter
 
 Als Ex-Raucherin biete ich Firmenseminare nach dem Rauchfrei-Programm in verschiedenen Formaten an. Meine langjährige persönliche Erfahrung und professionelle Expertise helfen Ihren Mitarbeitern, erfolgreich rauchfrei zu werden.
 

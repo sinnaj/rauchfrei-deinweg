@@ -1,8 +1,9 @@
 ---
-title: "Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier"
+title: "Rauchen aufhören – Professionelle Nichtraucherkurse in Hamburg"
 date: 2023-10-27T10:00:00+01:00
 draft: false
-description: "Professionelle Unterstützung zur Raucherentwöhnung mit Dipl.-Päd. Christiane Meik. Starten Sie noch heute Ihren Weg in ein rauchfreies Leben!"
+description: "Zertifizierte Raucherentwöhnung mit Nichtraucherkursen für Einzelpersonen und Unternehmen. Starten Sie jetzt Ihren Weg rauchfrei mit Dipl.-Päd. Christiane Meik – Heilpraktikerin für Psychotherapie und Mental-Coach."
+keywords: "Rauchen aufhören, Nichtraucherkurse, Raucherentwöhnung, Nichtraucherseminare, Rauchstopp Hamburg, rauchfrei werden"
 featured_image: "/images/fruehling_breath2.jpeg"
 cta_text: "JETZT ANMELDEN!"
 cta_link: "/anmeldung"
@@ -12,9 +13,9 @@ tags: ["Nichtraucher", "Gesundheit", "Kurs", "Aufhören"]
 featured: true
 ---
 
-# Atmen Sie auf – Ihr Weg in ein rauchfreies Leben beginnt hier
+# Rauchen aufhören – Professionelle Nichtraucherkurse in Hamburg
 
-Sind Sie bereit, sich von der Zigarette zu verabschieden und ein gesünderes, energiegeladeneres Leben zu führen? Das Rauchfrei-Programm bietet Ihnen die Unterstützung und die Werkzeuge, die Sie brauchen, um dieses Ziel zu erreichen.
+Sind Sie bereit, mit dem Rauchen aufzuhören und ein gesünderes, energiegeladeneres Leben zu führen? Unsere zertifizierten **Nichtraucherkurse** nach dem Rauchfrei-Programm des IFT bieten Ihnen professionelle Begleitung und bewährte Methoden zur **Raucherentwöhnung** – für einen dauerhaften Rauchstopp.
 
 **Investieren Sie in Ihre Gesundheit – es lohnt sich!**
 Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krankheiten sind nur einige der Vorteile, die auf Sie warten. Es ist die beste Zeit, die Kontrolle über Ihre Gesundheit zurückzugewinnen.
