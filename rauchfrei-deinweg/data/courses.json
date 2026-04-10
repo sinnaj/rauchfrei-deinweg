@@ -1,22 +1,22 @@
 {
   "courses": [
     {
-      "bookable": true,
-      "date": "2026-06-20",
-      "end_time": "21:30",
-      "id": "course-1772995855160",
-      "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel",
-      "start_time": "15:30",
-      "title": "Rauchfrei Tageskurs // Juni"
-    },
-    {
       "id": "course-1775823071057",
       "title": "Rauchfrei Tageskurs // Mai",
       "date": "2026-05-23",
       "start_time": "15:30",
       "end_time": "21:30",
       "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel",
-      "bookable": false
+      "bookable": true
+    },
+    {
+      "id": "course-1775823261042",
+      "title": "Rauchfrei Tageskurs // Juni",
+      "date": "2026-06-20",
+      "start_time": "15:30",
+      "end_time": "21:30",
+      "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel",
+      "bookable": true
     }
   ]
 }
