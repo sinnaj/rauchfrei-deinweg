@@ -2,15 +2,6 @@
   "courses": [
     {
       "bookable": true,
-      "date": "2026-05-23",
-      "end_time": "21:30",
-      "id": "course-1775823071057",
-      "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel",
-      "start_time": "15:30",
-      "title": "Rauchfrei Tageskurs // Mai für 226 €"
-    },
-    {
-      "bookable": true,
       "date": "2026-06-20",
       "end_time": "21:30",
       "id": "course-1775823261042",
@@ -19,13 +10,13 @@
       "title": "Rauchfrei Tageskurs // Juni für 226 €"
     },
     {
-      "id": "course-1777676840393",
-      "title": "Rauchfrei Tageskurs // Juli für 226 €",
+      "bookable": true,
       "date": "2026-07-04",
-      "start_time": "08:30",
       "end_time": "14:30",
+      "id": "course-1777676840393",
       "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg Eimsbüttel",
-      "bookable": true
+      "start_time": "08:30",
+      "title": "Rauchfrei Tageskurs // Juli für 226 €"
     }
   ]
 }
