@@ -4,7 +4,7 @@ date: 2023-10-27T10:00:00+01:00
 draft: false
 description: "Zertifizierte Raucherentwöhnung mit Nichtraucherkursen für Einzelpersonen und Unternehmen. Starten Sie jetzt Ihren Weg rauchfrei mit Dipl.-Päd. Christiane Meik – Heilpraktikerin für Psychotherapie und Mental-Coach."
 keywords: "Rauchen aufhören, Nichtraucherkurse, Raucherentwöhnung, Nichtraucherseminare, Rauchstopp Hamburg, rauchfrei werden"
-featured_image: "/images/fruehling_breath2.jpeg"
+featured_image: "/images/Hero-Banner-neu.png"
 cta_text: "JETZT ANMELDEN!"
 cta_link: "/anmeldung"
 cta_text_secondary: "Für Unternehmen"
@@ -40,7 +40,7 @@ Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krank
 
 <div class="flex flex-column mb5">
   <div class="w-100 tc">
-    <img src="/images/meik_instructor_circled_nobg-removebg-preview.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto; margin-bottom: 20px !important;">
+    <img src="/images/Rauch-Frei-Coach.png" alt="Christiane Meik" class="mw-100" style="max-width: 280px; height: auto; margin-bottom: 20px !important;">
   </div>
   <div class="w-100">
     <h4 class="f4 fw6 dark-green mb3" style="margin-top: 0 !important;">Dipl.-Päd. Christiane Meik (Ex-Raucherin)</h4>

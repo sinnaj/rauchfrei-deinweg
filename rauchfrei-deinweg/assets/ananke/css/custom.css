@@ -142,8 +142,20 @@ a.bg-green:active {
   backdrop-filter: blur(4px);
 }
 
+/* Homepage hero image: keep full subject visible on all viewports */
+.home-hero-banner {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+  background-color: #173a2f;
+}
+
 /* Responsive */
 @media screen and (max-width: 30em) {
+  .home-hero-banner {
+    background-position: center bottom !important;
+  }
+
   .highlight-box-title {
     font-size: 1.1rem;
     padding: 0.75rem 1rem;

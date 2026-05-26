@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Admin on Rauchfrei - Dein Weg</title>
-    <link>http://localhost:64862/admin/</link>
-    <description>Recent content in Admin on Rauchfrei - Dein Weg</description>
+    <title>Admin on Rauchfrei Dein Weg | Nichtraucherkurse &amp; Raucherentwöhnung Hamburg</title>
+    <link>https://rauchfrei-deinweg.de/admin/</link>
+    <description>Recent content in Admin on Rauchfrei Dein Weg | Nichtraucherkurse &amp; Raucherentwöhnung Hamburg</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <atom:link href="http://localhost:64862/admin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rauchfrei-deinweg.de/admin/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
