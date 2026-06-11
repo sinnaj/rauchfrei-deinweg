@@ -72,3 +72,11 @@ Informationen zu den Kursgebühren und möglichen Zuschüssen der Krankenkasse e
 ---
 
 Ich freue mich darauf, Sie auf Ihrem Weg in ein rauchfreies Leben zu begleiten!
+
+---
+
+### Mehr zum Thema "Mit dem Rauchen aufhoeren"
+
+Wenn Sie gezielt nach Informationen suchen, wie man mit dem Rauchen aufhoeren kann, finden Sie hier eine kompakte Uebersicht mit den wichtigsten Schritten:
+
+- [Mit dem Rauchen aufhoeren: So gelingt der Rauchstopp](/mit-dem-rauchen-aufhoeren/)

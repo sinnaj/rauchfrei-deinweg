@@ -2,6 +2,7 @@ baseURL = 'https://rauchfrei-deinweg.de/'
 languageCode = 'de-de'
 title = 'Rauchfrei Dein Weg | Nichtraucherkurse & Raucherentwöhnung Hamburg'
 theme = 'ananke'
+enableRobotsTXT = true
 
 # Google Analytics 4 – replace G-XXXXXXXXXX with your actual Measurement ID
 [services]
@@ -33,3 +34,8 @@ theme = 'ananke'
   name = "Für Unternehmen"
   url = "/unternehmen/"
   weight = 2
+
+[[menu.main]]
+  name = "Rauchen aufhören"
+  url = "/mit-dem-rauchen-aufhoeren/"
+  weight = 3

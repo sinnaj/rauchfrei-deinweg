@@ -1,6 +1,31 @@
 {{/* Keywords meta tag – populated from page front matter or site default */}}
 {{ $keywords := .Params.keywords | default "Rauchen aufhören, Nichtraucherkurse, Raucherentwöhnung, Nichtraucherseminare, rauchfrei werden Hamburg" }}
 <meta name="keywords" content="{{ $keywords }}">
+<meta name="language" content="de">
+<meta name="geo.region" content="DE-HH">
+<meta name="geo.placename" content="Hamburg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Rauchfrei Dein Weg",
+  "url": "https://rauchfrei-deinweg.de/",
+  "inLanguage": "de-DE",
+  "description": "Deutschsprachiges Angebot fuer Raucherentwoehnung, Nichtraucherkurse und Nichtraucherseminare in Hamburg.",
+  "about": [
+    "Mit dem Rauchen aufhoeren",
+    "Raucherentwoehnung",
+    "Nichtraucherkurs",
+    "Nichtraucherseminar"
+  ],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://rauchfrei-deinweg.de/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
 {{/* ─── JSON-LD Structured Data ─────────────────────────────────────────────── */}}
 

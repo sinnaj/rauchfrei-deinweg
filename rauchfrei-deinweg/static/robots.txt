@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rauchfrei-deinweg.de/sitemap.xml
