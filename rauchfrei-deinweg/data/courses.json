@@ -17,6 +17,15 @@
       "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg ",
       "start_time": "08:30",
       "title": "Rauchfrei Tageskurs // Juli für 226 €"
+    },
+    {
+      "id": "course-1779970171036",
+      "title": "Rauchfrei online 4 x 90 Minuten über 4 Wochen",
+      "date": "2026-06-23",
+      "start_time": "19:30",
+      "end_time": "21:00",
+      "location": "Online",
+      "bookable": true
     }
   ]
 }
