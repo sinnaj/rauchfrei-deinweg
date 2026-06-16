@@ -11,21 +11,21 @@
     },
     {
       "bookable": true,
-      "date": "2026-07-04",
-      "end_time": "14:30",
+      "date": "2026-09-12",
+      "end_time": "21:30",
       "id": "course-1777676840393",
       "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg ",
-      "start_time": "08:30",
-      "title": "Rauchfrei Tageskurs // Juli für 226 €"
+      "start_time": "15:30",
+      "title": "Rauchfrei Tageskurs // September für 226 €"
     },
     {
-      "id": "course-1779970171036",
-      "title": "Rauchfrei online 4 x 90 Minuten über 4 Wochen",
-      "date": "2026-06-23",
-      "start_time": "19:30",
+      "bookable": true,
+      "date": "2026-09-15",
       "end_time": "21:00",
-      "location": "Online",
-      "bookable": true
+      "id": "course-1779970171036",
+      "location": "Online - ab dem 15.09.26 1 x wöchentlich ",
+      "start_time": "19:30",
+      "title": "Rauchfrei online 4 x 90 Min. für 226 € -"
     }
   ]
 }
