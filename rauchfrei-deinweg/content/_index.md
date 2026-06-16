@@ -21,7 +21,7 @@ Sind Sie bereit, mit dem Rauchen aufzuhören und ein gesünderes, energiegeladen
 Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krankheiten sind nur einige der Vorteile, die auf Sie warten. Es ist die beste Zeit, die Kontrolle über Ihre Gesundheit zurückzugewinnen.
 
 {{< highlight-box title="Was erwartet Sie in meinem Programm?" >}}
-* **Professionelle Begleitung:** Dipl.-Päd. Christiane Meik – mit über 20 Jahren Erfahrung als Coachg & Trainerin, unterstützt sie Sie in zertifizierten Nichtraucherkursen mit bewährten Strategien und individueller Beratung.
+* **Professionelle Begleitung:** Dipl.-Päd. Christiane Meik – mit über 20 Jahren Erfahrung als Coach & Trainerin unterstützt sie Sie in zertifizierten Nichtraucherkursen mit bewährten Strategien und individueller Beratung.
 * **Stärkung Ihrer Motivation:** Entdecken Sie Ihre persönlichen Gründe für ein rauchfreies Leben und lernen Sie, wie Sie dieses aufrechterhalten.
 * **Umgang mit Entzugserscheinungen:** Frau Meik zeigt Ihnen effektive Wege, mit Verlangen und Stress umzugehen.
 * **Langfristiger Erfolg:** Lernen Sie Strategien, um auch nach dem Rauchstopp dauerhaft rauchfrei zu bleiben.
