@@ -53,11 +53,11 @@ Diese Website wird über **GitHub Pages** gehostet, einen Dienst der GitHub Inc.
 
 Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwende ich dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.
 
-### Kontaktformular / Anmeldeformular (Web3Forms)
+### Kontaktformular / Anmeldeformular (Tally)
 
-Treten Sie per E-Mail oder über das Anmeldeformular auf dieser Website mit mir in Kontakt, erteilen Sie mir zum Zwecke der Kontaktaufnahme Ihre freiwillige Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Hierfür ist die Angabe einer validen E-Mail-Adresse erforderlich. Die Angabe weiterer Daten ist optional.
+Treten Sie über das Anmeldeformular auf dieser Website mit mir in Kontakt, erteilen Sie mir zum Zwecke der Bearbeitung Ihrer Anmeldung Ihre freiwillige Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Hierfür ist die Angabe der für die Anmeldung erforderlichen Daten (u. a. Name, Anschrift und eine valide E-Mail-Adresse) notwendig. Die Angabe einer Telefonnummer ist optional.
 
-Zur Verarbeitung der Formulardaten nutze ich den Dienst **Web3Forms** (Web3Forms, [https://web3forms.com](https://web3forms.com)). Alle in das Formular eingegebenen Daten werden SSL-verschlüsselt über HTTPS an die Web3Forms-API übertragen und von dort direkt als E-Mail an mich weitergeleitet. Web3Forms fungiert hierbei als Auftragsverarbeiter im Sinne von Art. 28 DSGVO. Web3Forms speichert Ihre Daten nicht dauerhaft auf seinen Servern. Weitere Informationen zum Datenschutz von Web3Forms finden Sie unter: [https://web3forms.com/privacy](https://web3forms.com/privacy).
+Zur Bereitstellung und Verarbeitung der Formulardaten nutze ich den Dienst **Tally** (Tally BV, Oude Houtlei 118, 9000 Gent, Belgien, [https://tally.so](https://tally.so)). Das Formular wird per iframe von Tally auf dieser Website eingebunden. Die von Ihnen eingegebenen Daten werden SSL-verschlüsselt über HTTPS an Tally übertragen und innerhalb der Europäischen Union (Belgien) gespeichert. Tally fungiert hierbei als Auftragsverarbeiter im Sinne von Art. 28 DSGVO. Der Versand der Benachrichtigungs-E-Mails über eingegangene Anmeldungen erfolgt über den Dienst SendGrid. Weitere Informationen zum Datenschutz von Tally finden Sie unter: [https://tally.so/help/privacy-policy](https://tally.so/help/privacy-policy).
 
 Die von Ihnen gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten Anfrage werden personenbezogene Daten gelöscht.
 

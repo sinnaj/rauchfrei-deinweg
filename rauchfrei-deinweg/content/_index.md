@@ -32,6 +32,7 @@ Mehr Energie, bessere Fitness und ein geringeres Risiko für rauchbedingte Krank
   <a href="/anmeldung" class="f5 f4-l no-underline grow dib v-mid bg-green white ba b--green ph4 ph5-l pv3 hover-bg-dark-green fw6 br2">
     JETZT ANMELDEN!
   </a>
+  <p class="f5 lh-copy mt4">Es besteht auch die Möglichkeit von Einzelsitzungen Online. Mehr erfahren unter: <a href="https://www.meiklifecoaching.de" class="dark-green" target="_blank" rel="noopener">www.meiklifecoaching.de</a></p>
 </div>
 
 ---

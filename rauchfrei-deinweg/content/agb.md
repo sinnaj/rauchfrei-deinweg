@@ -1,6 +1,6 @@
 ---
 title: "AGB"
-date: 2024-01-01T00:00:00+01:00
+date: 2026-06-24T00:00:00+01:00
 draft: false
 description: "Allgemeine Geschäftsbedingungen von Rauchfrei - Dein Weg"
 layout: "single"
@@ -8,11 +8,22 @@ build:
   list: never
 ---
 
-### Verbindlichkeit der Anmeldung
+### Anmeldung & Stornierung
 
-Für die Kurse gilt: Eine Anmeldung oder Stornierung kann nur schriftlich erfolgen. Falls es zu einer Überbuchung gekommen ist, erfolgt die Platzvergabe in der Reihenfolge des Eingangs der Kursgebühr. Bitte beachten Sie, eine nicht bezahlte Kursgebühr ist keine Stornierung. Die Seminargebühr ist in voller Höhe mindestens 2 Wochen vor
+Anmeldung und Stornierung können ausschließlich in Textform (z. B. per E‑Mail) erfolgen. Bei Überbuchung erfolgt die Platzvergabe in der Reihenfolge des Zahlungseingangs der Kursgebühr. Eine nicht bezahlte Kursgebühr gilt nicht als Stornierung.
 
-Beginn der Veranstaltung zu überweisen. Bei kurzfristiger Absage, d. h. ab 14 Tagen vor Kursbeginn, ist die volle Kursgebühr zu entrichten, sofern kein(e) Ersatzteilnehmer(in) gestellt wird.
+### Zahlung
 
-Die Kursanmeldung kann innerhalb einer Woche nach Anmeldung kostenlos schriftlich storniert werden. Ausnahme ist, wenn die Anmeldung erst 14 Tage vor Kursbeginn erfolgt ist. Die Veranstalterin behält sich vor, Kurse nicht stattfinden zu lassen, wenn nicht genügend Anmeldungen erfolgt sind. Die bereits gezahlten Kursgebühren werden dann selbstverständlich erstattet.
-Bei vorzeitigem Abbruch eines laufenden Kurses, besteht kein Anspruch auf die Erstattung der anteiligen Seminargebühren. Der Teilnehmerin, dem Teilnehmer ist bekannt, dass die Teilnahme an den Kursen der eigenen Verantwortlichkeit unterliegt. Bei den Kursen handelt es sich um Präventionsangebote, die keine Therapie ersetzen können. Die Teilnahme an den Gruppen erfolgt auf eigene Verantwortung.
+Die Kursgebühr ist in voller Höhe von 226 € spätestens 2 Wochen vor Kursbeginn zu überweisen.
+
+### Widerruf & Stornofristen
+
+Die Anmeldung kann innerhalb von 7 Tagen nach Anmeldung kostenfrei in Textform storniert werden. Erfolgt die Anmeldung weniger als 14 Tage vor Kursbeginn, entfällt dieses kostenfreie Stornorecht. Bei einer Stornierung ab 14 Tagen vor Kursbeginn ist die volle Kursgebühr zu entrichten, sofern kein(e) Ersatzteilnehmer(in) gestellt wird.
+
+### Absage durch die Veranstalterin
+
+Die Veranstalterin behält sich vor, Kurse bei zu geringer Teilnehmerzahl abzusagen. Bereits gezahlte Kursgebühren werden in diesem Fall vollständig erstattet.
+
+### Abbruch & Eigenverantwortung
+
+Bei vorzeitigem Abbruch eines laufenden Kurses besteht kein Anspruch auf (anteilige) Erstattung der Kursgebühr. Die Teilnahme erfolgt auf eigene Verantwortung. Bei den Kursen handelt es sich um Präventionsangebote, die keine ärztliche oder psychotherapeutische Behandlung ersetzen.

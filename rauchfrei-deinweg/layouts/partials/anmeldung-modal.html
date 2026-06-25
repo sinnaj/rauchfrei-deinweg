@@ -18,89 +18,25 @@
         <button type="button" onclick="closeAnmeldungModal()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns">
           Abbrechen
         </button>
-        <button type="button" id="step1-next-btn" onclick="goToStep2()" class="modal-btn-submit f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns order-0 order-1-ns" disabled>
+        <button type="button" id="step1-next-btn" onclick="goToTally()" class="modal-btn-submit f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns order-0 order-1-ns" disabled>
           Weiter →
         </button>
       </div>
     </div>
 
-    <!-- Step 2: Personal Info Form -->
-    <form id="anmeldung-form" action="https://api.web3forms.com/submit" method="POST" style="display:none;">
-      <!-- Web3Forms Settings -->
-      <input type="hidden" name="access_key" value="de64875b-e858-42ef-bc13-88b73d9ad88b">
-      <input type="hidden" name="subject" value="Neue Kurs-Anmeldung - Rauchfrei Dein Weg">
-      <input type="hidden" name="from_name" value="Rauchfrei Dein Weg">
-      <input type="hidden" id="selected-course-input" name="Kurs" value="">
-      <input type="checkbox" name="botcheck" class="hidden" style="display:none">
-
+    <!-- Step 2: Personal Info (Tally) -->
+    <div id="anmeldung-step-tally" style="display:none;">
       <div class="modal-body">
-        <div id="selected-course-display" class="mb3 pa2 bg-washed-green br2 b--green ba f6 dark-green" style="display:none;"></div>
-        <div class="mb3">
-          <label class="db fw6 mb1 f6" for="vorname">Vorname *</label>
-          <input type="text" id="vorname" name="Vorname" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="Ihr Vorname">
-        </div>
-        <div class="mb3">
-          <label class="db fw6 mb1 f6" for="nachname">Nachname *</label>
-          <input type="text" id="nachname" name="Nachname" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="Ihr Nachname">
-        </div>
-        <div class="mb3">
-          <label class="db fw6 mb1 f6" for="email">E-Mail *</label>
-          <input type="email" id="email" name="E-Mail" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="ihre@email.de">
-        </div>
-        <div class="mb3">
-          <label class="db fw6 mb1 f6" for="strasse">Straße und Hausnummer *</label>
-          <input type="text" id="strasse" name="Straße" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="Musterstraße 12">
-        </div>
-        <div class="mb3 flex flex-column flex-row-ns">
-          <div class="w-100 w-30-ns mr0 mr3-ns mb3 mb0-ns">
-            <label class="db fw6 mb1 f6" for="plz">PLZ *</label>
-            <input type="text" id="plz" name="PLZ" required pattern="[0-9]{5}" maxlength="5" class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="12345">
-          </div>
-          <div class="w-100 w-70-ns">
-            <label class="db fw6 mb1 f6" for="stadt">Stadt *</label>
-            <input type="text" id="stadt" name="Stadt" required class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="Berlin">
-          </div>
-        </div>
-        <div class="mb3">
-          <label class="db fw6 mb1 f6" for="telefon">Telefonnummer <span class="fw4 gray">(optional)</span></label>
-          <input type="tel" id="telefon" name="Telefon" class="modal-input w-100 pa2 f5 br2 ba b--moon-gray" placeholder="z.B. 0170 1234567">
-        </div>
+        <div id="tally-course-display" class="mb3 pa2 bg-washed-green br2 b--green ba f6 dark-green" style="display:none;"></div>
+        <p class="f6 lh-copy mb3 dark-gray">Bitte füllen Sie Ihre Kontaktdaten aus, bestätigen Sie die AGB und senden Sie das Formular ab, um die Anmeldung verbindlich abzuschließen.</p>
+        <div id="tally-embed-container"></div>
       </div>
-
       <div class="modal-footer flex flex-column flex-row-ns justify-end">
-        <button type="button" id="back-to-step1-btn" onclick="goToStep1()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns" style="display:none;">
+        <button type="button" onclick="goToStep1()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns">
           ← Zurück
         </button>
-        <button type="button" onclick="closeAnmeldungModal()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns" id="cancel-step2-btn">
+        <button type="button" onclick="closeAnmeldungModal()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns order-0 order-1-ns">
           Abbrechen
-        </button>
-        <button type="submit" id="submit-btn" class="modal-btn-submit f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns order-0 order-1-ns">
-          Jetzt verbindlich anmelden
-        </button>
-      </div>
-    </form>
-
-    <!-- Step 3: AGB Confirmation -->
-    <div id="anmeldung-step-agb" style="display:none;">
-      <div class="modal-body">
-        <h3 class="f4 fw7 dark-red mb3 tc">⚠ Achtung – diese Anmeldung ist verbindlich!</h3>
-        <div class="pa3 bg-washed-yellow br2 ba b--gold mb3">
-          <p class="f5 fw6 dark-gray mb3">Die Kosten für den Kurs belaufen sich auf 226 €!</p>
-        </div>
-        <div id="agb-course-display" class="mb3 pa2 bg-washed-green br2 b--green ba f6 dark-green" style="display:none;"></div>
-        <h4 class="f5 fw7 dark-gray mb2">Bitte beachten Sie die AGB</h4>
-        <div class="pa3 bg-near-white br2 ba b--moon-gray mb3" style="max-height: 250px; overflow-y: auto;">
-          <p class="f6 lh-copy dark-gray mb2">Für die Kurse gilt: Eine Anmeldung oder Stornierung kann nur schriftlich erfolgen. Falls es zu einer Überbuchung gekommen ist, erfolgt die Platzvergabe in der Reihenfolge des Eingangs der Kursgebühr. Bitte beachten Sie, eine nicht bezahlte Kursgebühr ist keine Stornierung. Die Seminargebühr ist in voller Höhe mindestens 2 Wochen vor Beginn der Veranstaltung zu überweisen. Bei kurzfristiger Absage, d.&nbsp;h. ab 14 Tagen vor Kursbeginn, ist die volle Kursgebühr zu entrichten, sofern kein(e) Ersatzteilnehmer(in) gestellt wird.</p>
-          <p class="f6 lh-copy dark-gray mb2">Die Kursanmeldung kann innerhalb einer Woche nach Anmeldung kostenlos schriftlich storniert werden. Ausnahme ist, wenn die Anmeldung erst 14 Tage vor Kursbeginn erfolgt ist. Die Veranstalterin behält sich vor, Kurse nicht stattfinden zu lassen, wenn nicht genügend Anmeldungen erfolgt sind. Die bereits gezahlten Kursgebühren werden dann selbstverständlich erstattet.</p>
-          <p class="f6 lh-copy dark-gray mb0">Bei vorzeitigem Abbruch eines laufenden Kurses, besteht kein Anspruch auf die Erstattung der anteiligen Seminargebühren. Der Teilnehmerin, dem Teilnehmer ist bekannt, dass die Teilnahme an den Kursen der eigenen Verantwortlichkeit unterliegt. Bei den Kursen handelt es sich um Präventionsangebote, die keine Therapie ersetzen können. Die Teilnahme an den Gruppen erfolgt auf eigene Verantwortung.</p>
-        </div>
-      </div>
-      <div class="modal-footer flex flex-column flex-row-ns justify-end">
-        <button type="button" onclick="declineAgb()" class="modal-btn-cancel f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns mr0 mr3-ns order-1 order-0-ns">
-          ← Zurück
-        </button>
-        <button type="button" onclick="acceptAgb()" class="modal-btn-submit f6 f5-l fw6 pv2 ph4 br2 mb2 mb0-ns order-0 order-1-ns">
-          Ich akzeptiere die AGB – Verbindlich anmelden
         </button>
       </div>
     </div>
@@ -114,25 +50,22 @@
         Schließen
       </button>
     </div>
-
-    <!-- Error Message -->
-    <div id="form-error" style="display:none;" class="modal-body tc pv4">
-      <div class="f2 mb3">✕</div>
-      <h3 class="f4 fw6 dark-red mb2">Etwas ist schiefgelaufen</h3>
-      <p class="f5 mid-gray mb4">Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt per E-Mail.</p>
-      <button type="button" onclick="resetAnmeldungForm()" class="modal-btn-submit f6 f5-l fw6 pv2 ph4 br2">
-        Erneut versuchen
-      </button>
-    </div>
   </div>
 </div>
 
+<script async src="https://tally.so/widgets/embed.js"></script>
 <script>
 // Course data injected by Hugo at build time
 var RAUCHFREI_COURSES = {{ with site.Data.courses.courses }}{{ . | jsonify | safeJS }}{{ else }}[]{{ end }};
 
+// Tally form ID for the personal-info step (EU-hosted form provider).
+// The Tally form must contain a hidden field named "kurs" (receives the selected course)
+// and a required "Ich akzeptiere die AGB" checkbox as its final field before submit.
+var TALLY_FORM_ID = '44EV65';
+
 var selectedCourseId = null;
 var hasCourseStep = false;
+var selectedCourseInfo = '';
 
 function formatGermanDate(isoDate) {
   if (!isoDate) return '';
@@ -204,35 +137,62 @@ function openAnmeldungModal(e) {
   document.body.style.overflow = 'hidden';
   if (hasCourseStep) {
     document.getElementById('anmeldung-step-1').style.display = '';
-    document.getElementById('anmeldung-form').style.display = 'none';
   } else {
-    document.getElementById('anmeldung-step-1').style.display = 'none';
-    document.getElementById('anmeldung-form').style.display = '';
-    document.getElementById('back-to-step1-btn').style.display = 'none';
+    // No bookable courses — skip course selection and go straight to the form
+    goToTally();
   }
-}
-
-function goToStep2() {
-  var bookable = RAUCHFREI_COURSES.filter(function(c) { return c.bookable; });
-  var course = bookable.find(function(c) { return c.id === selectedCourseId; });
-  if (course) {
-    var courseInfo = course.title + ' – ' + formatGermanDate(course.date);
-    var timeStr = formatTimeRange(course.start_time, course.end_time);
-    if (timeStr) courseInfo += ' – ' + timeStr;
-    document.getElementById('selected-course-input').value = courseInfo;
-    var display = document.getElementById('selected-course-display');
-    display.textContent = '✓ Ausgewählter Kurs: ' + courseInfo;
-    display.style.display = '';
-  }
-  document.getElementById('anmeldung-step-1').style.display = 'none';
-  document.getElementById('anmeldung-form').style.display = '';
-  document.getElementById('back-to-step1-btn').style.display = '';
-  document.getElementById('cancel-step2-btn').style.display = 'none';
 }
 
 function goToStep1() {
-  document.getElementById('anmeldung-step-1').style.display = '';
-  document.getElementById('anmeldung-form').style.display = 'none';
+  document.getElementById('anmeldung-step-tally').style.display = 'none';
+  if (hasCourseStep) {
+    document.getElementById('anmeldung-step-1').style.display = '';
+  } else {
+    closeAnmeldungModal();
+  }
+}
+
+function goToTally() {
+  // Capture the selected course (if any) for display and Tally prefill
+  selectedCourseInfo = '';
+  if (hasCourseStep) {
+    var bookable = RAUCHFREI_COURSES.filter(function(c) { return c.bookable; });
+    var course = bookable.find(function(c) { return c.id === selectedCourseId; });
+    if (course) {
+      selectedCourseInfo = course.title + ' – ' + formatGermanDate(course.date);
+      var timeStr = formatTimeRange(course.start_time, course.end_time);
+      if (timeStr) selectedCourseInfo += ' – ' + timeStr;
+    }
+  }
+  document.getElementById('anmeldung-step-1').style.display = 'none';
+  loadTallyForm();
+  document.getElementById('anmeldung-step-tally').style.display = '';
+}
+
+function loadTallyForm() {
+  var courseDisplay = document.getElementById('tally-course-display');
+  if (selectedCourseInfo) {
+    courseDisplay.textContent = '✓ Ausgewählter Kurs: ' + selectedCourseInfo;
+    courseDisplay.style.display = '';
+  } else {
+    courseDisplay.style.display = 'none';
+  }
+  // Build the embed URL with the selected course prefilled (Tally form needs a hidden field named "kurs").
+  // AGB acceptance is collected as a required checkbox inside the Tally form itself (final step before submit).
+  var params = 'alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1';
+  if (selectedCourseInfo) {
+    params += '&kurs=' + encodeURIComponent(selectedCourseInfo);
+  }
+  var src = 'https://tally.so/embed/' + TALLY_FORM_ID + '?' + params;
+  var container = document.getElementById('tally-embed-container');
+  container.innerHTML = '<iframe data-tally-src="' + src + '" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Anmeldeformular"></iframe>';
+  if (window.Tally && typeof window.Tally.loadEmbeds === 'function') {
+    window.Tally.loadEmbeds();
+  } else {
+    // Fallback if the Tally embed script has not loaded yet
+    var iframe = container.querySelector('iframe');
+    if (iframe) iframe.src = iframe.getAttribute('data-tally-src');
+  }
 }
 
 function closeAnmeldungModal() {
@@ -243,81 +203,25 @@ function closeAnmeldungModal() {
 
 function resetAnmeldungForm() {
   selectedCourseId = null;
-  document.getElementById('anmeldung-form').reset();
-  document.getElementById('anmeldung-form').style.display = 'none';
+  selectedCourseInfo = '';
   document.getElementById('anmeldung-step-1').style.display = 'none';
+  document.getElementById('anmeldung-step-tally').style.display = 'none';
   document.getElementById('form-success').style.display = 'none';
-  document.getElementById('form-error').style.display = 'none';
-  document.getElementById('anmeldung-step-agb').style.display = 'none';
-  document.getElementById('submit-btn').disabled = false;
-  document.getElementById('submit-btn').textContent = 'Jetzt verbindlich anmelden';
   document.getElementById('step1-next-btn').disabled = true;
-  document.getElementById('back-to-step1-btn').style.display = 'none';
-  document.getElementById('cancel-step2-btn').style.display = '';
-  document.getElementById('selected-course-display').style.display = 'none';
-  document.getElementById('selected-course-input').value = '';
+  document.getElementById('tally-course-display').style.display = 'none';
+  var container = document.getElementById('tally-embed-container');
+  if (container) container.innerHTML = '';
 }
 
 // Modal only closes via Abbrechen button — no overlay click or Escape key
 
-// Form submission — intercept to show AGB step first
-document.getElementById('anmeldung-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  // Validate form first
-  if (!this.checkValidity()) {
-    this.reportValidity();
-    return;
-  }
-  // Show AGB confirmation step
-  document.getElementById('anmeldung-form').style.display = 'none';
-  var agbStep = document.getElementById('anmeldung-step-agb');
-  // Show selected course in AGB step
-  var courseVal = document.getElementById('selected-course-input').value;
-  var agbCourseDisplay = document.getElementById('agb-course-display');
-  if (courseVal) {
-    agbCourseDisplay.textContent = '✓ Ausgewählter Kurs: ' + courseVal;
-    agbCourseDisplay.style.display = '';
-  } else {
-    agbCourseDisplay.style.display = 'none';
-  }
-  agbStep.style.display = '';
+// Show the branded success screen when the Tally form has been submitted
+window.addEventListener('message', function(e) {
+  if (typeof e.data !== 'string') return;
+  if (e.data.indexOf('Tally.FormSubmitted') === -1) return;
+  document.getElementById('anmeldung-step-tally').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
 });
-
-function acceptAgb() {
-  document.getElementById('anmeldung-step-agb').style.display = 'none';
-  var btn = document.getElementById('submit-btn');
-  btn.disabled = true;
-  btn.textContent = 'Wird gesendet...';
-
-  var form = document.getElementById('anmeldung-form');
-  var formData = new FormData(form);
-  var jsonData = {};
-  formData.forEach(function(value, key) { jsonData[key] = value; });
-  // Add AGB acceptance note
-  jsonData['AGB_akzeptiert'] = 'Ja';
-
-  fetch(form.action, {
-    method: 'POST',
-    body: JSON.stringify(jsonData),
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
-  })
-  .then(function(response) { return response.json(); })
-  .then(function(data) {
-    if (data.success) {
-      document.getElementById('form-success').style.display = 'block';
-    } else {
-      throw new Error(data.message || 'Server error');
-    }
-  })
-  .catch(function() {
-    document.getElementById('form-error').style.display = 'block';
-  });
-}
-
-function declineAgb() {
-  document.getElementById('anmeldung-step-agb').style.display = 'none';
-  document.getElementById('anmeldung-form').style.display = '';
-}
 
 // Attach click handlers to all CTA links pointing to /anmeldung
 document.addEventListener('DOMContentLoaded', function() {
