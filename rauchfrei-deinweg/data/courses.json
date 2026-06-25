@@ -2,30 +2,30 @@
   "courses": [
     {
       "bookable": true,
-      "date": "2026-06-20",
-      "end_time": "21:30",
-      "id": "course-1775823261042",
-      "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg ",
-      "start_time": "15:30",
-      "title": "Rauchfrei Tageskurs // Juni für 226 €"
+      "date": "2026-08-22",
+      "end_time": "18:00",
+      "id": "course-1777676840393",
+      "location": "Joana's Kunstatelier Eiffestr. 664 D - 20537 Hamburg",
+      "start_time": "12:00",
+      "title": "Rauchfrei Tageskurs // August für 226 €"
     },
     {
       "bookable": true,
       "date": "2026-09-12",
-      "end_time": "21:30",
-      "id": "course-1777676840393",
-      "location": "Raum der Möglichkeiten, Willinks Park 8, 22529 Hamburg ",
-      "start_time": "15:30",
+      "end_time": "18:00",
+      "id": "course-1779970171036",
+      "location": "Joana's Kunstatelier Eiffestr. 664 D - 20537 Hamburg",
+      "start_time": "12:00",
       "title": "Rauchfrei Tageskurs // September für 226 €"
     },
     {
       "bookable": true,
-      "date": "2026-09-15",
-      "end_time": "21:00",
-      "id": "course-1779970171036",
-      "location": "Online - ab dem 15.09.26 1 x wöchentlich ",
-      "start_time": "19:30",
-      "title": "Rauchfrei online 4 x 90 Min. für 226 € -"
+      "date": "2026-11-07",
+      "end_time": "18:00",
+      "id": "course-1782039829968",
+      "location": "Joana's Kunstatelier Eiffestr. 664 D - 20537 Hamburg",
+      "start_time": "12:00",
+      "title": "Rauchfrei Tageskurs // November für 226 €"
     }
   ]
 }
