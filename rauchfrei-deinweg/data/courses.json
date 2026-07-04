@@ -2,7 +2,7 @@
   "courses": [
     {
       "bookable": true,
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "end_time": "18:00",
       "id": "course-1777676840393",
       "location": "Joana's Kunstatelier Eiffestr. 664 D - 20537 Hamburg",
@@ -11,7 +11,7 @@
     },
     {
       "bookable": true,
-      "date": "2026-09-12",
+      "date": "2026-09-20",
       "end_time": "18:00",
       "id": "course-1779970171036",
       "location": "Joana's Kunstatelier Eiffestr. 664 D - 20537 Hamburg",
@@ -20,7 +20,7 @@
     },
     {
       "bookable": true,
-      "date": "2026-11-07",
+      "date": "2026-11-08",
       "end_time": "18:00",
       "id": "course-1782039829968",
       "location": "Joana's Kunstatelier Eiffestr. 664 D - 20537 Hamburg",
