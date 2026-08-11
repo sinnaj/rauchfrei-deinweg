@@ -2,15 +2,6 @@
   "courses": [
     {
       "bookable": true,
-      "date": "2026-08-23",
-      "end_time": "18:00",
-      "id": "course-1777676840393",
-      "location": "Joana's Kunstatelier Eiffestr. 664 D - 20537 Hamburg",
-      "start_time": "12:00",
-      "title": "Rauchfrei Tageskurs // August für 226 €"
-    },
-    {
-      "bookable": true,
       "date": "2026-09-20",
       "end_time": "18:00",
       "id": "course-1779970171036",
@@ -26,6 +17,15 @@
       "location": "Joana's Kunstatelier Eiffestr. 664 D - 20537 Hamburg",
       "start_time": "12:00",
       "title": "Rauchfrei Tageskurs // November für 226 €"
+    },
+    {
+      "id": "course-1786455961997",
+      "title": "Rauchfrei-Online 4 Sitzungen - 226 €",
+      "date": "2026-09-15",
+      "start_time": "19:30",
+      "end_time": "21:00",
+      "location": "online",
+      "bookable": true
     }
   ]
 }
