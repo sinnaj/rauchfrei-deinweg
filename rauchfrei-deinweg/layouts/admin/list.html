@@ -30,6 +30,7 @@
     .btn-primary:hover { background: #1a5c1a; }
     .btn-primary:disabled { background: #aaa; cursor: not-allowed; }
     .login-error { background: #fff0f0; border: 1px solid #f5c6cb; color: #721c24; border-radius: 6px; padding: .65rem .9rem; font-size: .875rem; margin-top: 1rem; display: none; }
+    .login-error.lockout { background: #fff8e6; border-color: #f0d78c; color: #6a4b00; }
 
     /* ── Dashboard ── */
     #dashboard { display: none; padding-top: 56px; }
@@ -179,6 +180,10 @@
           Benötigte Berechtigung: <code>repo</code> (Vollzugriff auf Repositories).<br>
           Der Token wird nur für diese Browser-Sitzung gespeichert und beim Schließen des Tabs gelöscht.
         </div>
+        <div class="info-box" style="margin-bottom:1rem;">
+          <strong>Anmeldung nach Fehlversuchen:</strong><br><br>
+          Nach mehreren falschen Passworteingaben wird die Anmeldung kurzzeitig gesperrt. Die Sperre endet automatisch nach wenigen Minuten. Das richtige Passwort funktioniert jederzeit – auch während der Sperre. Der Benutzername wird unabhängig von Groß-/Kleinschreibung geprüft.
+        </div>
         <div class="info-box">
           <strong>Workflow nach dem Speichern:</strong><br><br>
           Nach dem Speichern wird ein Commit in das GitHub-Repository übertragen. GitHub Actions baut die Website automatisch neu und veröffentlicht die Änderungen. Dieser Vorgang dauert ca. 1–2 Minuten.
@@ -204,6 +209,15 @@ var INITIAL_SITE_CONTENT = {{ with site.Data.site_content }}{{ . | jsonify | saf
 
 // ── State ───────────────────────────────────────────────────────────────────
 var courses = [];
+var loginInProgress = false;
+var lockTimer = null;
+
+// Temporary lockout after repeated failed passwords. Stored in sessionStorage
+// so it survives a refresh, expires automatically, and is cleared when the tab
+// is closed — never a permanent lockout.
+var MAX_FAILED_LOGINS = 5;
+var LOCKOUT_MS = 2 * 60 * 1000;
+var LOCK_KEY = 'admin_login_guard';
 
 // ── Auth helpers ────────────────────────────────────────────────────────────
 async function sha256hex(str) {
@@ -211,38 +225,175 @@ async function sha256hex(str) {
   return Array.from(new Uint8Array(buf)).map(function(b){ return b.toString(16).padStart(2,'0'); }).join('');
 }
 
+function readGuard() {
+  try {
+    var raw = sessionStorage.getItem(LOCK_KEY);
+    if (!raw) return { fails: 0, lockedUntil: 0 };
+    var s = JSON.parse(raw);
+    var fails = parseInt(s.fails, 10) || 0;
+    var lockedUntil = parseInt(s.lockedUntil, 10) || 0;
+    if (lockedUntil && lockedUntil <= Date.now()) {
+      s = { fails: 0, lockedUntil: 0 };
+      sessionStorage.setItem(LOCK_KEY, JSON.stringify(s));
+      return s;
+    }
+    return { fails: fails, lockedUntil: lockedUntil };
+  } catch (e) {
+    return { fails: 0, lockedUntil: 0 };
+  }
+}
+
+function writeGuard(s) {
+  sessionStorage.setItem(LOCK_KEY, JSON.stringify(s));
+}
+
+function lockRemainingMs() {
+  var until = readGuard().lockedUntil || 0;
+  return Math.max(0, until - Date.now());
+}
+
+function lockMessage(ms) {
+  var secs = Math.max(1, Math.ceil(ms / 1000));
+  return 'Zu viele Fehlversuche. Bitte in ' + secs + ' Sekunde' + (secs === 1 ? '' : 'n') +
+    ' erneut versuchen. Die Sperre endet automatisch.';
+}
+
+function showLoginError(msg, isLockout) {
+  var err = document.getElementById('login-error');
+  err.textContent = msg;
+  err.className = isLockout ? 'login-error lockout' : 'login-error';
+  err.style.display = 'block';
+}
+
+function hideLoginError() {
+  var err = document.getElementById('login-error');
+  err.style.display = 'none';
+  err.className = 'login-error';
+}
+
+function stopLockTimer() {
+  if (lockTimer) {
+    clearInterval(lockTimer);
+    lockTimer = null;
+  }
+}
+
+function setLoginButtonIdle() {
+  var btn = document.getElementById('login-btn');
+  btn.disabled = false;
+  btn.textContent = 'Anmelden';
+}
+
+function updateLockUI() {
+  var btn = document.getElementById('login-btn');
+  var ms = lockRemainingMs();
+  if (ms <= 0) {
+    stopLockTimer();
+    setLoginButtonIdle();
+    hideLoginError();
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = 'Gesperrt (' + Math.ceil(ms / 1000) + 's)';
+  showLoginError(lockMessage(ms), true);
+}
+
+function startLockTimer() {
+  stopLockTimer();
+  updateLockUI();
+  if (lockRemainingMs() > 0) {
+    lockTimer = setInterval(updateLockUI, 250);
+  }
+}
+
+function registerFailedAttempt() {
+  var s = readGuard();
+  s.fails += 1;
+  if (s.fails >= MAX_FAILED_LOGINS) {
+    s.lockedUntil = Date.now() + LOCKOUT_MS;
+  }
+  writeGuard(s);
+  return s;
+}
+
+function clearGuard() {
+  sessionStorage.removeItem(LOCK_KEY);
+  stopLockTimer();
+}
+
+function failedLoginMessage(fails) {
+  var left = MAX_FAILED_LOGINS - fails;
+  if (left <= 0) return '';
+  if (left === 1) {
+    return 'Benutzername oder Passwort falsch. Noch 1 Versuch, danach wird die Anmeldung kurz gesperrt.';
+  }
+  return 'Benutzername oder Passwort falsch. Noch ' + left + ' Versuche.';
+}
+
 async function doLogin() {
+  if (loginInProgress) return;
+
   var user  = document.getElementById('login-user').value.trim();
-  var pass  = document.getElementById('login-pass').value;
+  var pass  = document.getElementById('login-pass').value.trim();
   var token = document.getElementById('login-token').value.trim();
   var btn   = document.getElementById('login-btn');
-  var err   = document.getElementById('login-error');
+  var passEl = document.getElementById('login-pass');
 
   // Credentials must be configured
   if (!ADMIN_USERNAME || !ADMIN_PASS_HASH) {
-    err.textContent = 'Admin-Zugangsdaten sind noch nicht konfiguriert. Bitte GitHub Secrets setzen (siehe Hilfe & Info).';
-    err.style.display = 'block';
+    showLoginError('Admin-Zugangsdaten sind noch nicht konfiguriert. Bitte GitHub Secrets setzen (siehe Hilfe & Info).', false);
     return;
   }
 
+  loginInProgress = true;
   btn.disabled = true;
   btn.textContent = 'Prüfe…';
-  err.style.display = 'none';
+  hideLoginError();
 
-  var hash = await sha256hex(pass);
-  if (user !== ADMIN_USERNAME || hash !== ADMIN_PASS_HASH) {
-    err.textContent = 'Benutzername oder Passwort falsch.';
-    err.style.display = 'block';
-    btn.disabled = false;
-    btn.textContent = 'Anmelden';
-    return;
+  try {
+    var hash;
+    try {
+      hash = await sha256hex(pass);
+    } catch (e) {
+      showLoginError('Anmeldung in diesem Browser nicht möglich. Bitte einen aktuellen Browser und HTTPS verwenden.', false);
+      return;
+    }
+
+    var userOk = user.toLowerCase() === String(ADMIN_USERNAME).toLowerCase();
+    var passOk = hash.toLowerCase() === String(ADMIN_PASS_HASH).toLowerCase();
+
+    // A correct password always succeeds, even during a lockout from earlier typos.
+    if (userOk && passOk) {
+      clearGuard();
+      // store GitHub token only in memory, not in Web Storage
+      window._githubToken = token;
+      sessionStorage.setItem('admin_auth', '1');
+      sessionStorage.setItem('admin_user', user);
+      showDashboard(user);
+      return;
+    }
+
+    if (lockRemainingMs() > 0) {
+      startLockTimer();
+      passEl.focus();
+      passEl.select();
+      return;
+    }
+
+    var s = registerFailedAttempt();
+    if (lockRemainingMs() > 0) {
+      startLockTimer();
+      return;
+    }
+    showLoginError(failedLoginMessage(s.fails), false);
+    passEl.focus();
+    passEl.select();
+  } finally {
+    loginInProgress = false;
+    if (sessionStorage.getItem('admin_auth') !== '1' && lockRemainingMs() <= 0) {
+      setLoginButtonIdle();
+    }
   }
-
-  // store GitHub token only in memory, not in Web Storage
-  window._githubToken = token;
-  sessionStorage.setItem('admin_auth', '1');
-  sessionStorage.setItem('admin_user', user);
-  showDashboard(user);
 }
 
 function doLogout() {
@@ -254,20 +405,28 @@ function doLogout() {
   document.getElementById('login-token').value = '';
   document.getElementById('dashboard').style.display = 'none';
   document.getElementById('login-screen').style.display = 'flex';
+  setLoginButtonIdle();
+  hideLoginError();
 }
 
 // Allow Enter key on login fields
 document.addEventListener('DOMContentLoaded', function() {
   ['login-user','login-pass','login-token'].forEach(function(id) {
     document.getElementById(id).addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') doLogin();
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        doLogin();
+      }
     });
   });
 
   // Auto-login if session exists
   if (sessionStorage.getItem('admin_auth') === '1') {
     showDashboard(sessionStorage.getItem('admin_user') || '');
+    return;
   }
+
+  if (lockRemainingMs() > 0) startLockTimer();
 });
 
 // ── Dashboard ───────────────────────────────────────────────────────────────
